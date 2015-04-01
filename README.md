@@ -22,7 +22,6 @@ Au travers d'un workflow "classique" de développement, cette session présente 
 * Comment le partager sur un autre OS (Mac -> Linux) à un autre dévelopeur
 * Des paradigmes nouveaux permis par Docker : "devbox in the cloud", "continously testing my devbox", etc.
 
-
 Je peux monter ma propre devbox dans un Dockerfile dès maintenant
 Je peux partager ma devbox avec mes collègues, indépendamment de leur PC de dév (Mac, Linux, Windows...)
 Je peux appliquer mon processus de développement (SCM, TDD/BDD, Continous*) à ma devbox
