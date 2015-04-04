@@ -1,30 +1,51 @@
-FROM ubuntu:14.04
+FROM debian:wheezy
+MAINTAINER Damien DUPORTAL <damien.duportal@gmail.com>
 MAINTAINER Jean-Marc MEESSEN <jean-marc@meessen-web.org>
 
-# Pull base image.
+ENV DEBIAN_FRONTEND noninteractive
+ENV IDEA_VERSION=14.1.1
 
+COPY x2go.list /etc/apt/sources.list.d/x2go.list
 
-# Install.
-RUN \
-  sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-  apt-get update && \
-  apt-get -y upgrade && \
-  apt-get install -y build-essential && \
-  apt-get install -y software-properties-common && \
-  apt-get install -y byobu curl git htop man unzip vim wget && \
-  rm -rf /var/lib/apt/lists/*
-
-# Install Java.
-RUN \
-  echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
-  add-apt-repository -y ppa:webupd8team/java && \
-  apt-get update && \
-  apt-get install -y oracle-java7-installer && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm -rf /var/cache/oracle-jdk7-installer
+RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
+  && apt-get update \
+  && apt-get install -y --no-install-recommends \
+    aptitude \
+    byobu \
+    build-essential \
+    curl \
+    htop \
+    openjdk-7-jdk \
+    openssh-server \
+    software-properties-common \
+    sudo \
+    vim \
+    wget
+RUN apt-get install -y --no-install-recommends \
+    xfce4 \
+    xfce4-goodies \
+    x2goserver \
+    x2goserver-xsession \
+    x2go-keyring \
+  && echo "root:root" | chpasswd \
+  && adduser --disabled-password --gecos "" dockerx \
+  && adduser dockerx sudo \
+  && echo "dockerx:dockerx" | chpasswd \
+  && adduser dockerx x2gouser \
+  && mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config \
+  && sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config \
+  && sed -i "s/#PasswordAuthentication/PasswordAuthentication/g" /etc/ssh/sshd_config \
+  && chmod 1777 /dev/shm \
+  && rm -rf /var/lib/apt/lists/* /var/cache/* /tmp/*
 
 # Define working directory.
 WORKDIR /data
 
-# Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+RUN curl -L -o /tmp/idea.tgz https://download.jetbrains.com/idea/ideaIC-${IDEA_VERSION}.tar.gz \
+  && tar -xzf /tmp/idea.tgz -C /opt/ \
+  && mv /opt/idea* /opt/idea \
+  && ln -s /opt/idea/bin/idea.sh /usr/local/bin/
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd","-D"]
