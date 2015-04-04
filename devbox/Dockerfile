@@ -22,6 +22,7 @@ RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
     vim \
     wget\
     xfce4 \
+    xfce4-goodies \
     x2goserver \
     x2goserver-xsession \
     x2go-keyring \
