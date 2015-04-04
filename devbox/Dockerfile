@@ -20,7 +20,8 @@ RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
     software-properties-common \
     sudo \
     vim \
-    wget\
+    wget
+RUN apt-get install -y --no-install-recommends \
     xfce4 \
     xfce4-goodies \
     x2goserver \
