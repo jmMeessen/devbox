@@ -1,6 +1,5 @@
 # Todo ?
 
-* Je ne sais pas pourquoi mais on a un jre 6 ET un jdk 7 nettoyer ça [DDU]
 * Maven Install [JMM]
 * Sudoes no passwd
 * Data volume à appliquer (/data, /tmp, logs, etc.) pour perfs I/O
