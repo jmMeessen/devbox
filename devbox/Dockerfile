@@ -13,8 +13,6 @@ RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
     aptitude \
     byobu \
     build-essential \
-    ca-certificates \
-    ca-certificates-java \
     curl \
     htop \
     openjdk-7-jdk \
