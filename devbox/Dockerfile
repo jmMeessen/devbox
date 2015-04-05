@@ -48,4 +48,8 @@ RUN curl -L -o /tmp/idea.tgz https://download.jetbrains.com/idea/ideaIC-${IDEA_V
 
 EXPOSE 22
 
+#Install bats (Bash testing framework)
+#RUN git clone https://github.com/sstephenson/bats.git
+#RUN bats/install.sh /usr/local
+
 CMD ["/usr/sbin/sshd","-D"]
