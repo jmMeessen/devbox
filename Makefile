@@ -1,4 +1,4 @@
-.PHONY: build shell test all
+.PHONY: build shell test all presentation
 
 DOCKER_IMAGE := cpt_igloo/devbox
 
@@ -9,6 +9,10 @@ build:
 
 shell:
 	docker run --rm --tty --interactive "$(DOCKER_IMAGE)" /bin/bash -l
+
+presentation:
+	docker run -d -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
+	@echo http://$$(boot2docker ip 2>/dev/null):80
 
 test:
 	docker run \
