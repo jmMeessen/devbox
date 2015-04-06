@@ -4,7 +4,6 @@ DOCKER_IMAGE := cpt_igloo/devbox
 
 build:
 	docker build --rm --tag "$(DOCKER_IMAGE)" .
-	docker run --rm -v $(CURDIR)/bats-tests:/tmp cpt_igloo/bats /usr/local/bin/bats /tmp/test.bats
 
 shell:
 	docker run --rm --tty --interactive "$(DOCKER_IMAGE)" /bin/bash -l
