@@ -16,5 +16,5 @@ test:
 		-v $$(which docker):$$(which docker) \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
-		tomdesinto/bats \
-			/usr/local/bin/bats /bats-tests/*.bats $(DOCKER_IMAGE)
+		dduportal/bats:0.4.0 \
+			/bats-tests/
