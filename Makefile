@@ -1,4 +1,4 @@
-.PHONY: build shell
+.PHONY: build shell test
 
 DOCKER_IMAGE := cpt_igloo/devbox
 
@@ -9,5 +9,5 @@ build:
 shell:
 	docker run --rm --tty --interactive "$(DOCKER_IMAGE)" /bin/bash -l
 
-validate:
+test:
     docker run -v $(CURDIR)/bats-tests:/tmp cpt_igloo/bats /usr/local/bin/bats /tmp/test.bats $(DOCKER_IMAGE)
