@@ -11,4 +11,10 @@ shell:
 	docker run --rm --tty --interactive "$(DOCKER_IMAGE)" /bin/bash -l
 
 test:
-	docker run -v $(CURDIR)/tests/bats:/bats-tests -v $(which docker):$(which docker) -e DOCKER_HOST cpt_igloo/bats /usr/local/bin/bats /bats-tests/*.bats $(DOCKER_IMAGE)
+	docker run \
+		-v $(CURDIR)/tests/bats:/bats-tests \
+		-v $$(which docker):$$(which docker) \
+		-v /var/run/docker.sock:/var/run/docker.sock \
+		-e DOCKER_HOST=unix:///var/run/docker.sock \
+		tomdesinto/bats \
+			/usr/local/bin/bats /bats-tests/*.bats $(DOCKER_IMAGE)
