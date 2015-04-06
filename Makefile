@@ -11,4 +11,3 @@ shell:
 
 validate:
     docker run -v $(CURDIR)/bats-tests:/tmp cpt_igloo/bats /usr/local/bin/bats /tmp/test.bats $(DOCKER_IMAGE)
-

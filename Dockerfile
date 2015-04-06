@@ -5,7 +5,7 @@ MAINTAINER Jean-Marc MEESSEN <jean-marc@meessen-web.org>
 ENV DEBIAN_FRONTEND noninteractive
 ENV IDEA_VERSION=14.1.1
 
-COPY x2go.list /etc/apt/sources.list.d/x2go.list
+COPY configs/x2go.list /etc/apt/sources.list.d/x2go.list
 
 RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
   && apt-get update \
