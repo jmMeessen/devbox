@@ -5,7 +5,7 @@ DOCKER_IMAGE := cpt_igloo/devbox
 all: build test
 
 build:
-	docker build --rm --tag "$(DOCKER_IMAGE)" .
+	docker build --tag "$(DOCKER_IMAGE)" .
 
 shell:
 	docker run --rm --tty --interactive "$(DOCKER_IMAGE)" /bin/bash -l
