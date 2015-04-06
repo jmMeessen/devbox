@@ -1,6 +1,8 @@
-.PHONY: build shell test
+.PHONY: build shell test all
 
 DOCKER_IMAGE := cpt_igloo/devbox
+
+all: build test
 
 build:
 	docker build --rm --tag "$(DOCKER_IMAGE)" .
