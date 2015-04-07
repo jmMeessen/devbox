@@ -1,6 +1,5 @@
 # Todo ?
 
-* Maven Install [JMM]
 * Sudoes no passwd
 * Data volume à appliquer (/data, /tmp, logs, etc.) pour perfs I/O
 
