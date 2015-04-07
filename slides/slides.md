@@ -11,5 +11,12 @@ class: center, middle
 3. ...
 
 ---
+.footnote[.red.bold[*] Important footnote]
 
 # Introduction
+
+```javascript
+function add(a, b)
+  return a + b
+end
+```
