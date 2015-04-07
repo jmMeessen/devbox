@@ -4,6 +4,7 @@ MAINTAINER Jean-Marc MEESSEN <jean-marc@meessen-web.org>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV IDEA_VERSION=14.1.1
+ENV MAVEN_VERSION=3.2.5
 
 COPY configs/x2go.list /etc/apt/sources.list.d/x2go.list
 
@@ -44,12 +45,26 @@ WORKDIR /data
 RUN curl -L -o /tmp/idea.tgz https://download.jetbrains.com/idea/ideaIC-${IDEA_VERSION}.tar.gz \
   && tar -xzf /tmp/idea.tgz -C /opt/ \
   && mv /opt/idea* /opt/idea \
-  && ln -s /opt/idea/bin/idea.sh /usr/local/bin/
+  && ln -s /opt/idea/bin/idea.sh /usr/local/bin/ \
+  && rm -rf /tmp/*
+
+# Install "maven"
+RUN curl -L -o /tmp/maven.tgz http://apache.belnet.be/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
+  && mkdir -p /opt/maven \
+  && tar xzf /tmp/maven.tgz -C /opt/maven \
+  && ln -s /opt/maven/apache-maven-${MAVEN_VERSION} /opt/maven/maven-latest \
+  && rm -rf /tmp/*
+
+COPY configs/user-env.sh /etc/profile.d/user-env.sh
+#RUN . /etc/profile.d/user-env.sh
+
+#ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+#ENV M3_HOME=/opt/maven/maven-latest
+#ENV M3=$M3_HOME/bin
+#ENV PATH=$M3:$PATH
+
 
 EXPOSE 22
 
-#Install bats (Bash testing framework)
-#RUN git clone https://github.com/sstephenson/bats.git
-#RUN bats/install.sh /usr/local
 
 CMD ["/usr/sbin/sshd","-D"]
