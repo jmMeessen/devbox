@@ -1,6 +1,48 @@
 # devbox
 Building a portable docker based developer toolbox
 
+* a versioned building block,
+* continuously tested,
+* extensible,
+* portable,
+* sharable.
+
+## How to use the Devbox
+
+
+
+## How to build the Devbox
+
+It is assumed that you have a Docker environment installed (or alternatively Boot2Docker).
+
+After getting the latest version of the box by cloning the Git repository, position yourself in the root of directory structure so that run the various commands.
+
+To create the Devbox (and run the automatic validation tests) execute : 
+
+ > make
+
+To run the tests only, execute :
+ > make test
+
+To connect interactively to the Devbox, just execute :
+
+ > make shell
+
+
+## How to run the presentation 
+
+(With Docker of course)
+
+To start a containerized web server that will generate the presentation:
+
+ > make presentation 
+
+To display it, start your favourite browser and point it to the Docker IP, port 80 (the address is echoed on the screen once the container is started).
+
+
+
+--- 
+
 Tu l'as sûrement deja vécu, ami développeur/Full stack Engineer. Lors de l'accueil un nouveau collègue ou un stagiaire, il te faut consacrer 2 jours et une énergie sans précédent avant qu'il puisse "vraiment" travailler sur le projet.
 
 Mettre au point et surtout maintenir un environnement de développement efficace et adapté a l'écosystème de votre équipe met du temps. Mais son apprentissage par le nouvel arrivant aussi. Et de plus la courbe d'apprentissage n'est pas linéaire. Conséquences: démotivation, planning décalé, frustration.
