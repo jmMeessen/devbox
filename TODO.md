@@ -1,6 +1,6 @@
 # Todo ?
 
-* [x] Sudoes no passwd
+* [ ] Sudoes no passwd
 * [ ] Data volume à appliquer (/data, /tmp, logs, etc.) pour perfs I/O
 
 * [ ] Script shell de lancement de la devbox (avec partage docker socket + docker bin)
