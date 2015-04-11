@@ -5,6 +5,7 @@ MAINTAINER Jean-Marc MEESSEN <jean-marc@meessen-web.org>
 ENV DEBIAN_FRONTEND noninteractive
 ENV IDEA_VERSION=14.1.1
 ENV MAVEN_VERSION=3.2.5
+ENV FIREFOX_VERSION=37.0.1
 
 COPY configs/x2go.list /etc/apt/sources.list.d/x2go.list
 
@@ -66,6 +67,13 @@ COPY configs/idea.png /opt/idea/idea.png
 USER dockerx
 COPY configs/lxde-main-panel /home/dockerx/.config/lxpanel/LXDE/panels/panel
 USER root
+COPY configs/idea.desktop /usr/share/applications/idea.desktop
+COPY configs/idea.png /opt/idea/idea.png
+
+RUN apt-get update && apt-get install -y --no-install-recommends libXrender1 libasound2 libdbus-glib-1-2 libgtk2.0-0 libpango1.0-0 libxt6 && apt-get remove -y iceweasel
+RUN cd /opt; wget -O - \
+    http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-x86_64/en-US/firefox-${FIREFOX_VERSION}.tar.bz2 | tar jx \
+    && ln -s /opt/firefox/firefox /usr/local/bin/
 
 EXPOSE 22
 

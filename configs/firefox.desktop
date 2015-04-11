@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mozilla Firefox
+Comment=A modern web browser
+Icon=/opt/firefox/browser/icons/mozicon128.png
+Exec=/usr/local/bin/firefox
+Type=Application
+Terminal=false
+Categories=Network;WebBrowser;

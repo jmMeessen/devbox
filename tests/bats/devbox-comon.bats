@@ -1,39 +1,71 @@
 #!/usr/bin/env bats
 
+CONTAINER_TEST_NAME=testing_devbox
+DEVBOX_IMAGE_NAME=cpt_igloo/devbox
+
+
+run_as_user_cmd_in_devbox() {
+	AS_USER="$1"
+	shift
+	COMMAND="$*"
+	docker run \
+		-t \
+		-u ${AS_USER} \
+		--name "${CONTAINER_TEST_NAME}" \
+		"${DEVBOX_IMAGE_NAME}" \
+			${COMMAND}
+}
+
+teardown() {
+	# Try to delete the tested container without poluuting stout nor stderr
+	# Note the || : that will ignore result of the commande since circleCI throw nonsense error whene deleting on btrfs based Docker
+	docker rm -v "${CONTAINER_TEST_NAME}" 1>&2 2>/dev/null || :
+}
 
 @test "Check JDK presence" {
-	docker run cpt_igloo/devbox:latest which java
+	run_as_user_cmd_in_devbox "dockerx" which java
 }
 
-@test "Check maven presence" {
-	docker run cpt_igloo/devbox:latest bash -c "/opt/maven/maven-latest/bin/mvn -version"
-}
-
-@test "Check that maven is in the path for a user " {
-	docker run cpt_igloo/devbox:latest bash -l -c "mvn -version"
+@test "Check MVN presence" {
+	run_as_user_cmd_in_devbox "dockerx" /opt/maven/maven-latest/bin/mvn -version
 }
 
 @test "Check that dockerx can sudo whithout password" {
-	docker run -u dockerx cpt_igloo/devbox:latest sudo whoami
+	run_as_user_cmd_in_devbox "dockerx" sudo whoami
 }
 
 @test "We use lxde" {
-	docker run -u dockerx cpt_igloo/devbox:latest which lxde-logout
+	run_as_user_cmd_in_devbox "dockerx" which lxde-logout
 }
 
 @test "We have a shortcut for IDEA in the lxde start menu" {
-	docker run cpt_igloo/devbox:latest [ -f /usr/share/applications/idea.desktop ]
-	docker run cpt_igloo/devbox:latest [ -f /opt/idea/idea.png ]
-	[ $(docker run cpt_igloo/devbox:latest grep -i idea /usr/share/applications/idea.desktop | wc -l) -ge 1 ]
+	run_as_user_cmd_in_devbox "dockerx" [ -f /usr/share/applications/idea.desktop ]
+	teardown 
+	run_as_user_cmd_in_devbox "dockerx" [ -f /opt/idea/idea.png ]
+	teardown
+	[ $(run_as_user_cmd_in_devbox "dockerx"  grep -i idea /usr/share/applications/idea.desktop | wc -l) -ge 1 ]
 }
 
 @test "Idea is in the main taskbar" {
-	docker run -u dockerx cpt_igloo/devbox:latest [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
-	[ $(docker run cpt_igloo/devbox:latest grep 'idea.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
+	teardown
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'idea.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
 }
 
-@test "the main taskbar is on the top to not mess up woth X11 main windows" {
-	docker run -u dockerx cpt_igloo/devbox:latest [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
-	[ $(docker run cpt_igloo/devbox:latest grep 'edge=top' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
-	
+@test "the main taskbar is on the top to not mess up with X11 main windows" {
+	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
+	teardown
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'edge=top' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+}
+
+@test "We have Firefox installed and shortcut' to the main taskbar and start menu" {
+	run_as_user_cmd_in_devbox "dockerx" which firefox
+	teardown
+	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
+	teardown
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'firefox.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+}
+
+@test "We don't have iceweasel installed anymore (a debian web browser that can cofnlict with firefox)" {
+	[ $(run_as_user_cmd_in_devbox "dockerx" dpkg -l | grep iceweasel | grep "^ii" | wc -l) -eq 0 ]
 }
