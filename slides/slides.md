@@ -59,7 +59,7 @@ layout: false
 
   sadfasdf sadfasdfa asfdasdsfasd adsfsadfasf.
 
-  ![Cpt Igloo](Ancien_logo_Captain_Iglo.gif)
+  ![Cpt Igloo](pictures/Ancien_logo_Captain_Iglo.gif)
 ]
 
 ---
