@@ -7,13 +7,17 @@ Building a portable docker based developer toolbox
 * portable,
 * sharable.
 
+Note: It is assumed that you have a Docker environment installed (or alternatively Boot2Docker). A good test is whether "docker ps" shows no errors.
+
 ## How to use the Devbox
+
+To use the Devbox a X client is needed. We chose "X2GO". The client part must be available on your machine.
+
 
 
 
 ## How to build the Devbox
 
-It is assumed that you have a Docker environment installed (or alternatively Boot2Docker).
 
 After getting the latest version of the box by cloning the Git repository, position yourself in the root of directory structure so that run the various commands.
 
