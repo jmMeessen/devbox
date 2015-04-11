@@ -16,3 +16,7 @@
 @test "Check that dockerx can sudo whithout password" {
 	docker run -u dockerx cpt_igloo/devbox:latest sudo whoami
 }
+
+@test "We use lxde" {
+	docker run -u dockerx cpt_igloo/devbox:latest which lxde-logout
+}
