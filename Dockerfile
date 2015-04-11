@@ -59,6 +59,13 @@ COPY configs/user-env.sh /etc/profile.d/user-env.sh
 
 RUN echo "dockerx ALL = NOPASSWD: ALL" > /etc/sudoers.d/dockerx
 
+COPY configs/idea.desktop /usr/share/applications/idea.desktop
+COPY configs/idea.png /opt/idea/idea.png
+
+# Configure things for dockerx user
+USER dockerx
+COPY configs/lxde-main-panel /home/dockerx/.config/lxpanel/LXDE/panels/panel
+USER root
 
 EXPOSE 22
 
