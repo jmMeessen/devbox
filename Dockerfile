@@ -56,12 +56,8 @@ RUN curl -L -o /tmp/maven.tgz http://apache.belnet.be/maven/maven-3/${MAVEN_VERS
   && rm -rf /tmp/*
 
 COPY configs/user-env.sh /etc/profile.d/user-env.sh
-#RUN . /etc/profile.d/user-env.sh
 
-#ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-#ENV M3_HOME=/opt/maven/maven-latest
-#ENV M3=$M3_HOME/bin
-#ENV PATH=$M3:$PATH
+RUN echo "dockerx ALL = NOPASSWD: ALL" > /etc/sudoers.d/dockerx
 
 
 EXPOSE 22
