@@ -77,6 +77,12 @@ RUN cd /opt; wget -O - \
 
 COPY configs/firefox.desktop /usr/share/applications/firefox.desktop
 
+RUN chown -R dockerx:dockerx /data \
+  && chmod -R 0750 /data
+
+# Mark as data volumes those folder
+VOLUME ["/data","/var/log","/tmp","/var/cache"]
+
 EXPOSE 22
 
 
