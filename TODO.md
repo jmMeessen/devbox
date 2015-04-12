@@ -10,4 +10,9 @@
 * [x] LXDE IntelliJ dans main taskbar
 * [x] Main taskbar en haut de l'écran
 
-* [ ] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
+* [x] Ajout d'un navigateur web
+* [ ] Ajout d'un raccourci pour le terminal dans la taskbar
+
+* [x] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
+
+* [ ] Lighten the final image
