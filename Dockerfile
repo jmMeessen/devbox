@@ -75,6 +75,8 @@ RUN cd /opt; wget -O - \
     http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-x86_64/en-US/firefox-${FIREFOX_VERSION}.tar.bz2 | tar jx \
     && ln -s /opt/firefox/firefox /usr/local/bin/
 
+COPY configs/firefox.desktop /usr/share/applications/firefox.desktop
+
 EXPOSE 22
 
 

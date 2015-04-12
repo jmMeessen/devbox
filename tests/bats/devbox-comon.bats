@@ -63,6 +63,8 @@ teardown() {
 	teardown
 	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
 	teardown
+	run_as_user_cmd_in_devbox "dockerx" [ -f /usr/share/applications/firefox.desktop ]
+	teardown
 	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'firefox.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
 }
 
