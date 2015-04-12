@@ -1,4 +1,4 @@
-.PHONY: build shell test all presentation start
+.PHONY: build shell test all presentation start clean
 
 DOCKER_IMAGE := cpt_igloo/devbox
 DOCKER_NAME = devbox
@@ -10,6 +10,7 @@ build:
 
 start:
 	docker start $(DOCKER_NAME) 2>/dev/null || docker run \
+		--name $(DOCKER_NAME) \
 		-d \
 		-p 2200:22 \
 		-v $$(which docker):$$(which docker) \
@@ -21,7 +22,7 @@ shell:
 	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
 
 presentation:
-	docker run -d -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
+	@docker run -d -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
 	@echo http://$$(boot2docker ip 2>/dev/null):80
 
 test:
@@ -32,3 +33,7 @@ test:
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
 		dduportal/bats:0.4.0 \
 			/bats-tests/
+
+clean:
+	docker kill devbox
+	docker rm devbox
