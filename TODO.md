@@ -3,7 +3,7 @@
 * [x] Sudoes no passwd
 * [x] Data volume à appliquer (/data, /tmp, logs, etc.) pour perfs I/O
 
-* [ ] Script shell de lancement de la devbox (avec partage docker socket + docker bin)
+* [x] Script shell de lancement de la devbox (avec partage docker socket + docker bin)
 * [ ] Script de "backup" du workspace (docker run --volume-from=devbox debian:wheezy -v /vagrant:/backup tar czf /data /backup/$(date).tgz ou truc du genre) 
 
 * [x] LXDE raccourci pour IntelliJ avec image
@@ -14,6 +14,8 @@
 * [x] Ajout d'un raccourci pour le terminal dans la taskbar
 
 * [x] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
+
+* [ ] Test docker inside devbox
 
 * [ ] remove docker-bats directory
 * [ ] Lighten the final image
