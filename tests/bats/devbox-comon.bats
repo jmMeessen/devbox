@@ -71,3 +71,15 @@ teardown() {
 @test "We don't have iceweasel installed anymore (a debian web browser that can cofnlict with firefox)" {
 	[ $(run_as_user_cmd_in_devbox "dockerx" dpkg -l | grep iceweasel | grep "^ii" | wc -l) -eq 0 ]
 }
+
+@test "We have data volumes for some I/O bounds directories and working directories" {
+	run_as_user_cmd_in_devbox "dockerx" ls -l /data
+	[ $(docker inspect -f '{{index .Volumes "/tmp"}}' "${CONTAINER_TEST_NAME}" | grep 'no value' | wc -l ) -eq 0 ]
+	[ $(docker inspect -f '{{index .Volumes "/data"}}' "${CONTAINER_TEST_NAME}" | grep 'no value' | wc -l ) -eq 0 ]
+	[ $(docker inspect -f '{{index .Volumes "/var/log"}}' "${CONTAINER_TEST_NAME}" | grep 'no value' | wc -l ) -eq 0 ]
+	[ $(docker inspect -f '{{index .Volumes "/var/cache"}}' "${CONTAINER_TEST_NAME}" | grep 'no value' | wc -l ) -eq 0 ]
+}
+
+@test "/data folder is writeable by dockerx" {
+	run_as_user_cmd_in_devbox "dockerx" touch /data/test_file
+}
