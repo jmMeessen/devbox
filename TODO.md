@@ -11,7 +11,7 @@
 * [x] Main taskbar en haut de l'écran
 
 * [x] Ajout d'un navigateur web
-* [ ] Ajout d'un raccourci pour le terminal dans la taskbar
+* [x] Ajout d'un raccourci pour le terminal dans la taskbar
 
 * [x] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
 
