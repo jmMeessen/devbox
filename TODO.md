@@ -17,3 +17,7 @@
 
 * [ ] remove docker-bats directory
 * [ ] Lighten the final image
+
+## Nice to have
+
+* [ ] Further improve the README.md. Add links to sub-files like ISSUES or background information on the why of the initative.
