@@ -46,26 +46,27 @@ teardown() {
 	[ $(run_as_user_cmd_in_devbox "dockerx"  grep -i idea /usr/share/applications/idea.desktop | wc -l) -ge 1 ]
 }
 
-@test "Idea is in the main taskbar" {
+@test "We have our preferred icons in the main taskbar, ont the top screen" {
 	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
 	teardown
-	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'idea.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
-}
-
-@test "the main taskbar is on the top to not mess up with X11 main windows" {
-	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
-	teardown
+	# Top-edged task bar
 	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'edge=top' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+	teardown
+	# IntelliJ Idea
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'idea.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+	teardown
+	# Mozilla Firefox
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'firefox.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
+	teardown
+	# Our LXTerminal
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'lxterminal.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
 }
 
 @test "We have Firefox installed and shortcut' to the main taskbar and start menu" {
 	run_as_user_cmd_in_devbox "dockerx" which firefox
 	teardown
-	run_as_user_cmd_in_devbox "dockerx" [ -f /home/dockerx/.config/lxpanel/LXDE/panels/panel ]
-	teardown
 	run_as_user_cmd_in_devbox "dockerx" [ -f /usr/share/applications/firefox.desktop ]
 	teardown
-	[ $(run_as_user_cmd_in_devbox "dockerx" grep 'firefox.desktop' /home/dockerx/.config/lxpanel/LXDE/panels/panel | wc -l) -ge 1 ]
 }
 
 @test "We don't have iceweasel installed anymore (a debian web browser that can cofnlict with firefox)" {
