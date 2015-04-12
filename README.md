@@ -15,12 +15,6 @@ To use the Devbox a X client is needed. We chose "X2GO". The client part must be
 
 Start the Devbox container with `docker run -d  -P  cpt_igloo/devbox`.
 
-FIXME: assigning a fix port doesn't work for me
-
-   >12:18 $ docker run -d  -p 22:49156  cpt_igloo/devbox
-   >34b990a3e43a7e7e8a855cfee44ec59692d9362c450df378c283eee50e1c4aac
-   >2015/04/12 12:19:02 Error response from daemon: Cannot start container 34b990a3e43a7e7e8a855cfee44ec59692d9362c450df378c283eee50e1c4aac: Error starting userland proxy: listen tcp 0.0.0.0:22: bind: address already in use
-
 Start the X2GO client and configure a session by taking care to setup
 
 - the host to your boot2docker host (192.168.59.103)
@@ -38,8 +32,8 @@ You will be prompted to accept the devbox public SSH key.
 If you restarted the container, the key might have changed and the SSH client will not like it.
 Follow the instructions to accept the new public key.
 
-The system gives an error "SSH daemon failed to open the application's public key".
-Accept it by clicking on ok. 
+If the system gives an error like "SSH daemon failed to open the application's public key", just
+accept it by clicking on "OK". 
 And, tadahh, your in business and connected to the GUI of your Devbox.
 
 
