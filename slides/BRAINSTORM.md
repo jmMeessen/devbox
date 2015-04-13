@@ -72,7 +72,60 @@ Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
     ** Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
     ** Eat your own dog food
 
+### Que faire ? 
+
+* Constat : même problèmes, donc mêmes solutions (on est "top marketeux", on fait des acronymes ah ah)
+  * DaaT : Devbox as a Tool (comme avant)
+  * DaaS : Devbox as a Software
+  * DaaI : Devbox as an Infrastructure
+  * DaaLt :Devbox as a Learning tool
+* Why not Docker ? 
+  * Docker résouds le pb de Matrix of hell
+  * Docker contractualise
+  * Docker est rapide
+  * Docker est "à la mode"
+
 ### Explication de la solution
+
+Ce qui est necessaire pour comprendre la demo
+
+
+### Démo
+
+### Use cases
+
+* Onboarding
+* MaJ IDEA sans casser le dev workflow
+* Portabilité
+* Legacy (reprendre old applications)
+
+### What did we learnt ?
+
+* Qu'as tu appris ?
+* qu'ai-je appris ?
+
+
+### ce que j'ai appris (Jmm)
+
+* j'ai appris de nouvelles technos (amélioré ma pratique)
+  * Docker
+  * Test Driven SYSTEM development (DEVOPS) 
+  * Bash and Linux skills
+  * the Gitlab/Github way
+  * confirmation que de la conception à la production, le flux est continu (mort aux silos)
+  * apprentissage du travail communautaire/ OSS (des valeurs qui me sont très proches)
+
+* Notre intuition est correcte:
+  * Encore rien rencontré de bloquant et très, très prometteur.
+  * Il y a encore du travail
+  * j'attend avec impatience l'épreuve du feu (situation réelle)
+
+
+
+
+
+
+
 
 
 ## Damien
