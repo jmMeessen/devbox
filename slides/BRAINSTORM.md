@@ -13,7 +13,7 @@
   * Docker people/ autre personnes nous ayant poussé sur ces pratiques
   * Public d'être là
 
-### Why ?
+### Why this talk ?
 
 * seen a lot in nearly 30 years in IT
   * victories / failures
@@ -46,13 +46,26 @@
   * les terminaux sur le mainframe
   * les PC avec images (quid des utilisateurs nomades)
   * virtualisation avec Vagrant/VB par exemple
+
+* DEVBOX = TOOLBOX = Trousse à outils (=> trousse à outils + camion atelier)
+
+* Constat : même problèmes, donc mêmes solutions (on est "top marketeux", on fait des acronymes ah ah)
+  * DaaT : Devbox as a Tool (comme avant)
+  * DaaS : Devbox as a Software
+  * DaaI : Devbox as an Infrastructure
+  * DaaLt :Devbox as a Learning tool
 * Docker
-  * rend des choses qu'on fesait depuis longtemps tres bon marche
-    * utilisation du GPS
-    * nouveau produits/nouvelles utilisations
+  * Docker résouds le pb de Matrix of hell
+  * Docker contractualise
+  * Docker est rapide
+  * Docker est "à la mode"
+    * rend des choses qu'on fesait depuis longtemps tres bon marche
+      * utilisation du GPS
+      * nouveau produits/nouvelles utilisations
+
 * utiliser (naturellement) les recettes de l'ingénierie logicielle moderne
 
-### "Full stack" Engineer
+### We are "Full stack" Engineer, aren't we ?
 
 Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
 
@@ -72,22 +85,18 @@ Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
     ** Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
     ** Eat your own dog food
 
-### Que faire ? 
-
-* Constat : même problèmes, donc mêmes solutions (on est "top marketeux", on fait des acronymes ah ah)
-  * DaaT : Devbox as a Tool (comme avant)
-  * DaaS : Devbox as a Software
-  * DaaI : Devbox as an Infrastructure
-  * DaaLt :Devbox as a Learning tool
-* Why not Docker ? 
-  * Docker résouds le pb de Matrix of hell
-  * Docker contractualise
-  * Docker est rapide
-  * Docker est "à la mode"
 
 ### Explication de la solution
 
-Ce qui est necessaire pour comprendre la demo
+* Ce qui est necessaire pour comprendre la demo (sous forme de dessin)
+
+* Comment fonctionne l'environement (structure)
+  * boot2docker
+  * le Devbox container
+  * le data container
+
+* Le processus de build et d'integration continue
+  * comment BATS est appelé
 
 
 ### Démo
@@ -95,9 +104,10 @@ Ce qui est necessaire pour comprendre la demo
 ### Use cases
 
 * Onboarding
+* Developement simple basé sur Spring Boot
 * MaJ IDEA sans casser le dev workflow
 * Portabilité
-* Legacy (reprendre old applications)
+* ? Legacy (reprendre old applications)
 
 ### What did we learnt ?
 
@@ -113,7 +123,7 @@ Ce qui est necessaire pour comprendre la demo
   * Bash and Linux skills
   * the Gitlab/Github way
   * confirmation que de la conception à la production, le flux est continu (mort aux silos)
-  * apprentissage du travail communautaire/ OSS (des valeurs qui me sont très proches)
+  * apprentissage du travail communautaire/ OSS (des valeurs qui me sont très proches) aussi à distance.
 
 * Notre intuition est correcte:
   * Encore rien rencontré de bloquant et très, très prometteur.
