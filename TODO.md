@@ -16,6 +16,11 @@
 * [x] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
 
 * [ ] Test docker inside devbox
+* [ ] Faire une démo d'un dévelopement (spring boot)
+	* [ ] depot Github séparé
+	* [ ] configurer maven
+	* [ ] faire fonctionner le build maven depuis la ligne de commande
+	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
 
 * [ ] remove docker-bats directory
 * [ ] Lighten the final image
