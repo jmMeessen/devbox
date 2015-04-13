@@ -2,8 +2,6 @@
 
 ## Plan global (après travail de synthèse)
 
-## Damien
-
 ### Intro
 
 * Présentations (nom, prénom, mail, githu, twitter, etc.) :
@@ -14,6 +12,71 @@
   * Mix It team
   * Docker people/ autre personnes nous ayant poussé sur ces pratiques
   * Public d'être là
+
+### Why ?
+
+* seen a lot in nearly 30 years in IT
+  * victories / failures
+  * great peoples
+* still as enthousiastic to learn/share
+  * great stuff out there (admirative)
+  * make people's life easier
+  * I want to share why I am proud of what I do
+  * hope to be able to continue even after retirement
+* BUT, one of my big frustration
+  * Wasted (unfocused energy) at the start of a every new adventure
+
+### What is the problem ?
+
+
+* Wasted High power moment (high energy)
+* Setup of a work environement takes lot of time (comme une sortie de piste, dans les graviers)
+* perte du focus
+* Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
+* très rapide à déployer et du premier coup
+* et je ne parle pas de l'env d'integration
+* Maintenance d'un environnement de dévelopement == douleur
+  * "Just In Time" : c'est au moment des "onboardings" qu'on a découvre les problèmes, comportement homogène dans le temps
+  * Maintenance et maJ : montée de version  de IDE / JDK / etc.
+  * Coût : comment le mesurer pour l'anticiper voire le diminuer 
+
+### Solutions ?
+
+* j'ai connu
+  * les terminaux sur le mainframe
+  * les PC avec images (quid des utilisateurs nomades)
+  * virtualisation avec Vagrant/VB par exemple
+* Docker
+  * rend des choses qu'on fesait depuis longtemps tres bon marche
+    * utilisation du GPS
+    * nouveau produits/nouvelles utilisations
+* utiliser (naturellement) les recettes de l'ingénierie logicielle moderne
+
+### "Full stack" Engineer
+
+Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
+
+* (distributed) source management
+* The tests drive the development
+  * TDD/BDD
+* Continous*
+  * IC
+  * Continuous testing
+  * Continuous benchmarking
+  * Continuous delivery
+
+* "Nouvelles" pratiques - soft skills
+  * Agile (itération, proche du besoin, réactivité)
+  * DevOps (dev2prod, prod2dev, tendre vers l'iso prod, efficience en continuité avec l'agile)
+  * "Human stack" (continuous and linear learning, trust, transparency, droit à l'erreur)
+    ** Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
+    ** Eat your own dog food
+
+### Explication de la solution
+
+
+## Damien
+
 
 
 ### Problème à résoudre
@@ -78,28 +141,7 @@ Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
 
 ## Jean-Marc
 
-### Why ?
 
-* seen a lot in nearly 30 years in IT
-  * victories / failures
-  * great peoples
-* still as enthousiastic to learn/share
-  * great stuff out there (admirative)
-  * make people's life easier
-  * I want to share why I am proud of what I do
-  * hope to be able to continue even after retirement
-* BUT, one of my big frustration
-  * Wasted (unfocused energy) at the start of a every new adventure
-
-### What is the problem ?
-
-
-* Wasted High power moment (high energy)
-* Setup of a work environement takes lot of time (comme une sortie de piste, dans les graviers)
-* perte du focus
-* Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
-* très rapide à déployer et du premier coup
-* et je ne parle pas de l'env d'integration
 
 
 ### Solutions
