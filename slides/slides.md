@@ -27,7 +27,7 @@ class: center, middle, inverse
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
+  ### Qui sommes-nous ?
 ]
 .right-column[
 
@@ -39,7 +39,7 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
+  ### Qui sommes-nous ?
 ]
 .right-column[
 
@@ -57,7 +57,7 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
+  ### Qui sommes-nous ?
 ]
 .right-column[
 
@@ -76,7 +76,7 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
+  ### Qui sommes-nous ?
 ]
 .right-column[
 
@@ -84,10 +84,10 @@ layout: false
 
   &nbsp;
 
-  **Le pays où on ne se prend pas trop au sérieux...**
+  **Le pays où on ne se prend pas (trop) au sérieux...**
 
 
-.center[![BièresBelges](pictures/belgianBeers.jpg)]
+.center[![BlagueBelge](pictures/defile20106.jpg)]
 
 ]
 
@@ -95,11 +95,63 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
+  ### Qui sommes-nous ?
+]
+.right-column[
+
+  ## Nous venons de Belgique, ...
+
+  &nbsp;
+
+  **Le pays où on tourne en rond ?**
+
+
+.center[![BlagueBelge](pictures/bruxelles_brussels.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ### Qui sommes-nous ?
+]
+.right-column[
+  ## Jean-Marc MEESSEN
+  * Senior developer @ Worldline, coach, development infrastructure
+
+  * Developement Middleware sur Fuse / ServiceMix / Camel
+
+  * Trop timide pour participer activement à des projets Open Source. Quelques contributions à Asciidoctor et Freeplane.
+
+  * `jean-marc@meessen-web.org`, `@JM_Meessen`
+
+]
+
+---
+
+layout: false
+.left-column[
+# Intro
+  ### Qui sommes-nous ?
 ]
 .right-column[
   ## Jean-Marc MEESSEN
 
+  Vous pourriez aussi me retrouver dans un surgelateur de grande surface
+
+  .center[![iglo](pictures/Ancien_logo_Captain_Iglo.gif)]
+
+]
+
+---
+
+layout: false
+.left-column[
+# Intro
+  ### Qui sommes-nous ?
+]
+.right-column[
   ## Damien DUPORTAL
 ]
 
@@ -107,14 +159,32 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ## Qui sommes-nous ?
-  ## Remerciements
+  ### Qui sommes-nous ?
+  ### Remerciements
 ]
 .right-column[
   ## Merci !
   * Organisateurs et bénévoles Mix-It 
   * à vous, de venir !
   * Aux personnes ayant réalisé et crus en ces outils
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ### Qui sommes-nous ?
+  ### Remerciements
+  ### Et vous ?
+]
+.right-column[
+  ## Faisons connaissance...
+
+  * Des développeurs ?
+
+  * Expérience avec la virtualisation ?
+
+  * Vous souvenez-vous de votre premier emploi ?
 ]
 
 ---
@@ -147,12 +217,18 @@ layout: false
 layout: false
 .left-column[
 # Pourquoi ce talk ?
-  ## Quel est le problème ?
+  ### Quel est le problème ?
 ]
 .right-column[
   ## Quel est le problème ?
-  * Wasted High power moment (high energy)
-  * Setup of a work environement takes lot of time (comme une sortie de piste, dans les graviers)
+  * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
+  
+  * La mise en place de l'environement prend beaucoup de temps
+    * Demarrage en trombe, mais dans les graviers...
+
+.center[![Sortie de piste](pictures/sortieDePiste.png)]
+
+
   * perte du focus
   * Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
   * très rapide à déployer et du premier coup
@@ -167,8 +243,8 @@ layout: false
 layout: false
 .left-column[
 # Pourquoi ce talk ?
-  ## Quel est le problème ?
-  ## Solutions ?
+  ### Quel est le problème ?
+  ### Solutions ?
 ]
 .right-column[
   ## Solutions "avant"
