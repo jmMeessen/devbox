@@ -9,12 +9,13 @@ class: center, middle, inverse
 
 1. Introduction
 
-  - What the talk is about (and not)
-  - Who we are 
-  - Who are you ?
+  - De quoi allons nous parler ?
+  - Qui sommes nous ?
+  - Qui êtes vous ?
 
-2. Deep-dive
-3. ...
+2. Un peu de théorie ...
+
+3. Des démos ...
 
 ---
 layout: false
@@ -25,7 +26,51 @@ class: center, middle, inverse
 ---
 layout: false
 .left-column[
-# Introduction
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  ## Nous venons de Belgique, ...
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  ## Nous venons de Belgique, ...
+
+  **le pays du chocolat...**
+
+.center[![Chokotoff](pictures/chokotoff2.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  ## Nous venons de Belgique, ...
+
+  **le pays de la bière...**
+
+.center[![BièresBelges](pictures/bieresBelges.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
   ## Qui sommes-nous ?
 ]
 .right-column[
@@ -37,7 +82,7 @@ layout: false
 ---
 layout: false
 .left-column[
-# Introduction
+# Intro
   ## Qui sommes-nous ?
   ## Remerciements
 ]
@@ -45,7 +90,7 @@ layout: false
   ## Merci !
   * Organisateurs et bénévoles Mix-It 
   * à vous, de venir !
-  * Au personnes ayant réalisé et crus en ces outils
+  * Aux personnes ayant réalisé et crus en ces outils
 ]
 
 ---
@@ -55,16 +100,24 @@ layout: false
 ]
 .right-column[
   ## Pourquoi ce talk ?
-  * seen a lot in nearly 30 years in IT
-    * victories / failures
-    * great peoples
-  * still as enthousiastic to learn/share
-    * great stuff out there (admirative)
-    * make people's life easier
-    * I want to share why I am proud of what I do
-    * hope to be able to continue even after retirement
+  * J'ai participé à beaucoup d'aventures ces 30 dernières années.
+
+  * Toujours aussi enthousiaste pour apprendre et partager
+  
   * BUT, one of my big frustration : Wasted (unfocused energy) at the start of a every new adventure
 ]
+???
+"30 dernieres années" : 
+  * aventures informatiques
+  * au moins pour Jmm
+  * beaucoup de belles victoires, des échecs...
+  * des "jerks", mais surtout des gens géniaux
+
+## enthousiastes
+* admiratif des choses extraordinaires qu'il y "là dehors" 
+* rendre la vie des gens plus facile et agréable
+* Je suis fier de ce que je fais et je veux le partager (ex: new comers)
+* J'espère pouvoir continuer à être enthousiaste et partageur au dela de ma penssion
 
 ---
 layout: false
