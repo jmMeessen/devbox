@@ -27,11 +27,11 @@ class: center, middle, inverse
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
 
-  ## Nous venons de Belgique, ...
+# Nous venons de Belgique
 
 ]
 
@@ -39,11 +39,11 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
 
-  ## Nous venons de Belgique, ...
+  # Nous venons de Belgique
 
   &nbsp;
 
@@ -57,11 +57,11 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
 
-  ## Nous venons de Belgique, ...
+  # Nous venons de Belgique
 
   &nbsp;
 
@@ -76,11 +76,11 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
 
-  ## Nous venons de Belgique, ...
+  # Nous venons de Belgique
 
   &nbsp;
 
@@ -95,11 +95,11 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
 
-  ## Nous venons de Belgique, ...
+  # Nous venons de Belgique
 
   &nbsp;
 
@@ -114,10 +114,15 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
-  ## Jean-Marc MEESSEN
+  # Jean-Marc MEESSEN
+
+  Vous pourriez  me retrouver dans un surgelateur de grande surface
+
+  .center[![iglo](pictures/Ancien_logo_Captain_Iglo.gif)]
+
   * Senior developer @ Worldline, coach, development infrastructure
 
   * Developement Middleware sur Fuse / ServiceMix / Camel
@@ -133,39 +138,26 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
+  ## Qui sommes-nous ?
 ]
 .right-column[
-  ## Jean-Marc MEESSEN
-
-  Vous pourriez aussi me retrouver dans un surgelateur de grande surface
-
-  .center[![iglo](pictures/Ancien_logo_Captain_Iglo.gif)]
-
-]
-
----
-
-layout: false
-.left-column[
-# Intro
-  ### Qui sommes-nous ?
-]
-.right-column[
-  ## Damien DUPORTAL
+  # Damien DUPORTAL
 ]
 
 ---
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
-  ### Remerciements
+  ## Qui sommes-nous ?
+  ## Remerciements
 ]
 .right-column[
   # Merci !
+
   * Organisateurs et bénévoles Mix-It 
+
   * à vous, de venir !
+
   * Aux personnes ayant réalisé et crus en ces outils
 ]
 
@@ -173,14 +165,16 @@ layout: false
 layout: false
 .left-column[
 # Intro
-  ### Qui sommes-nous ?
-  ### Remerciements
-  ### Et vous ?
+  ## Qui sommes-nous ?
+  ## Remerciements
+  ## Et vous ?
 ]
 .right-column[
-  ## Faisons connaissance...
+  # Faisons connaissance...
 
-  * Des développeurs ?
+  * Des devs ? Des Ops ? Des chefs ? Autre ?
+
+  * Des seniors (des vrais) ? Des moins seniors ? Des juniors ?
 
   * Expérience avec la virtualisation ?
 
@@ -193,7 +187,7 @@ layout: false
 # Pourquoi ce talk ?
 ]
 .right-column[
-  ## Pourquoi ce talk ?
+  # Pourquoi ce talk ?
   * J'ai participé à beaucoup d'aventures ces 30 dernières années.
 
   * Toujours aussi enthousiaste pour apprendre et partager
@@ -217,11 +211,11 @@ layout: false
 layout: false
 .left-column[
 # Pourquoi ce talk ?
-  ### Quel est le problème ?
+  ## Quel est le problème ?
 ]
 .right-column[
 
-  ## Quel est le problème ?
+  # Quel est le problème ?
   * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
   
   * La mise en place de l'environement prend beaucoup de temps
@@ -243,8 +237,8 @@ layout: false
 layout: false
 .left-column[
 # Pourquoi ce talk ?
-  ### Quel est le problème ?
-  ### Solutions ?
+  ## Quel est le problème ?
+  ## Solutions ?
 ]
 .right-column[
   # Solutions "avant"
@@ -508,10 +502,16 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  # Données ?
 
-  * Docker's data volume
-  * Make backup
+# Données
+
+  * Comment conserver ses données si on détruit/met à jour la VM ?
+  * Comment sauvegarder ses données ?
+
+# Réseau 
+
+  * Travailleurs nomades, pauvres employé de SSI...
+  * Ressources locales : cache proxy, registre docker, cache Maven) ?
  
 ]
 
@@ -523,24 +523,11 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  # Connectivité Web 
+  # Devbox as an infrastructure
 
-  * Travailleur nomades, pauvres employé de SSI
-  * Local ressources (proxy-cache, docker-registry, etc.)
- 
-]
+  Solution : Docker-compose ! 
 
----
-layout: false
-.left-column[
-# Démo Time !
-  ## Devbox as a code
-  ## Devbox as an infrastructure
-]
-.right-column[
-  # Docker-compose ! 
-
-FIXMe : docker.yml
+FIXME : docker.yml
  
 ]
 
