@@ -163,7 +163,7 @@ layout: false
   ### Remerciements
 ]
 .right-column[
-  ## Merci !
+  # Merci !
   * Organisateurs et bénévoles Mix-It 
   * à vous, de venir !
   * Aux personnes ayant réalisé et crus en ces outils
@@ -220,6 +220,7 @@ layout: false
   ### Quel est le problème ?
 ]
 .right-column[
+
   ## Quel est le problème ?
   * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
   
@@ -227,7 +228,6 @@ layout: false
     * Demarrage en trombe, mais dans les graviers...
 
 .center[![Sortie de piste](pictures/sortieDePiste.png)]
-
 
   * perte du focus
   * Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
@@ -247,7 +247,7 @@ layout: false
   ### Solutions ?
 ]
 .right-column[
-  ## Solutions "avant"
+  # Solutions "avant"
 
   * les terminaux sur le mainframe
   * les PC avec images (quid des utilisateurs nomades)
@@ -264,7 +264,7 @@ layout: false
   ## Constat
 ]
 .right-column[
-  ## Constat
+  # Constat
 
   * DEVBOX = TOOLBOX = Trousse à outils (=> trousse à outils + camion atelier)
 
@@ -285,7 +285,7 @@ layout: false
   ## Docker !
 ]
 .right-column[
-  ## Docker !
+  # Docker !
 
   * Docker résouds le pb de Matrix of hell
   * Docker contractualise
@@ -311,7 +311,7 @@ layout: false
 
 ]
 .right-column[
-  ## "Full stack" Engineer
+  # "Full stack" Engineer
 
   Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
 ]
@@ -324,7 +324,7 @@ layout: false
 
 ]
 .right-column[
-  ## "La vérité est dans le code"
+  # "La vérité est dans le code"
   (http://programming-motherfucker.com)
 
   Utilisez des SCMs, préférerrez des décentralisés qui ouvre la voie à de nouvelles façons de travailler :
@@ -337,11 +337,11 @@ layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
 
 ]
 .right-column[
-  ## "Nouvelles" pratiques
+  # "Nouvelles" pratiques
 
   N'ayons pas peur d'_essayer_, *plusieurs fois* toutes ces nouvelles façons de faire, sans être dogmatiques
 
@@ -355,11 +355,11 @@ layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
   ## Continous*
 ]
 .right-column[
-  ## Continous*
+  # Continous*
 
   * Continous Integration
   * Continuous Testing (TDD right ?)
@@ -386,7 +386,7 @@ layout: false
   ## "Human Stack"
 ]
 .right-column[
-  ## "Human stack" 
+  # "Human stack" 
     * (continuous and linear learning, trust, transparency, droit à l'erreur)
     * Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
     * Eat your own dog food
@@ -404,7 +404,7 @@ layout: false
 # Démo Time !
 ]
 .right-column[
-  ## Démo Time !
+  # Démo Time !
 
   * Contexte : spring boot "hello world" application
   * Java DK, Maven, IntelliJ Idea, Docker, Compose
@@ -424,7 +424,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## SCM :Git (on Github)
+  # SCM :Git (on Github)
 
   * Public
   * Partagé
@@ -439,7 +439,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## TDD/BDD
+  # TDD/BDD
 
   Utilisation de [bats](https://github.com/sstephenson/bats) au maximum
   * BDD oriented :
@@ -457,7 +457,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Continuous*
+  # Continuous*
 
   Utilisation de [CircleCI](https://circleci.com) :
   * Github-hook based (push == build)
@@ -474,7 +474,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Docker stack
+  # Docker stack
 
   Utilisation de [boot2docker](https://boot2docker.io) :
   * Mutli-plateforme (virtualbox)
@@ -489,7 +489,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Cinématique
+  # Cinématique
 
   Utilisation de [GNU Make](https://www.gnu.org/software/make/) :
   * Indépendance cinémtique / outils (passage à packer ou rocket ?)
@@ -504,7 +504,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Demo 1 : 
+  # Demo 1 : 
 
   FIXME : schema global
  
@@ -523,7 +523,7 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Données ?
+  # Données ?
 
   * Docker's data volume
   * Make backup
@@ -538,7 +538,7 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Connectivité Web 
+  # Connectivité Web 
 
   * Travailleur nomades, pauvres employé de SSI
   * Local ressources (proxy-cache, docker-registry, etc.)
@@ -553,7 +553,7 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Docker-compose ! 
+  # Docker-compose ! 
 
 FIXMe : docker.yml
  
@@ -567,7 +567,7 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Demo 2 : 
+  # Demo 2 : 
 
   FIXME : schema global
  
@@ -587,7 +587,7 @@ layout: false
   ## Devbox 0 downtime
 ]
 .right-column[
-  ## Demo 3 : 
+  # Demo 3 : 
 
   => Update de qque chose (installation d'un package) avec version
   FIXME : schema global
@@ -606,7 +606,7 @@ layout: false
   ## Qu'à t'on appris ?
 ]
 .right-column[
-  ## Qu'à t'on appris ?
+  # Qu'à t'on appris ?
 
  * j'ai appris de nouvelles technos (amélioré ma pratique)
   * Docker
