@@ -85,7 +85,6 @@ Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
     ** Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
     ** Eat your own dog food
 
-
 ### Explication de la solution
 
 * Ce qui est necessaire pour comprendre la demo (sous forme de dessin)
