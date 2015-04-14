@@ -301,20 +301,9 @@ layout: false
 template: inverse
 
 
-# Utiliser les recettes de l'ingénierie logicielle *moderne*
+# Utiliser les recettes de l'ingénierie logicielle 
+## Nous sommes TOUS des ingénieurs "Full stack"
 
-
----
-layout: false
-.left-column[
-# "Full stack" Engineer
-
-]
-.right-column[
-  # "Full stack" Engineer
-
-  Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
-]
 
 ---
 layout: false
@@ -370,26 +359,22 @@ layout: false
 ]
 
 ---
-template: inverse
-
-# "Human stack"
-
-![Default-aligned image](pictures/vitr.jpg)
-
----
 layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
   ## Continous*
   ## "Human Stack"
 ]
 .right-column[
-  # "Human stack" 
-    * (continuous and linear learning, trust, transparency, droit à l'erreur)
-    * Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
-    * Eat your own dog food
+
+# "Human stack" : culture 
+* (continuous and linear learning, trust, transparency, droit à l'erreur)
+* Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
+* Eat your own dog food
+
+![Default-aligned image](pictures/vitr.jpg)
  
 ]
 
@@ -581,27 +566,6 @@ template: inverse
 ---
 layout: false
 .left-column[
-# Démo Time !
-  ## Devbox as a code
-  ## Devbox as an infrastructure
-  ## Devbox 0 downtime
-]
-.right-column[
-  # Demo 3 : 
-
-  => Update de qque chose (installation d'un package) avec version
-  FIXME : schema global
- 
-]
-
----
-template: inverse
-
-# Demo 3
-
----
-layout: false
-.left-column[
 # Conclusion
   ## Qu'à t'on appris ?
 ]
@@ -621,6 +585,30 @@ layout: false
   * Il y a encore du travail
   * j'attend avec impatience l'épreuve du feu (situation réelle)
 
+]
+
+---
+layout: false
+.left-column[
+# Conclusion
+  ## Qu'à t'on appris ?
+  ## Le bon et le moins bon
+]
+.right-column[
+
+# Pas cool
+* GUI : des difficultés et bugs bizarre
+* Adhésion et motivation nécessaires
+
+# Cool
+* Performances 
+* CLI : parfait
+* Excellent indicateur de la culture de vos devs.
+
+# Améliorations
+* Processus de release rigoureux avec le DockerHub
+* Plus d'automatisation (x2go commande line)
+* README à améliorer (contributions ? )
 ]
 
 ---
