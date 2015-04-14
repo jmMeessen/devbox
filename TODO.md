@@ -25,6 +25,14 @@
 * [ ] remove docker-bats directory
 * [ ] Lighten the final image
 
+# Slide related TODO
+
+* [ ] faire le plan
+* [ ] clarifier ce qu'on veut que les auditeurs "ramènent chez eux"
+
+* [ ] changer le fond d'un slide
+* [ ] Est-ce que le slide show fonctionne aussi off-line ?
+
 ## Nice to have
 
 * [ ] Further improve the README.md. Add links to sub-files like ISSUES or background information on the why of the initative.
