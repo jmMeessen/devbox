@@ -39,5 +39,5 @@ backup:
 	docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
 
 clean:
-	docker kill devbox
-	docker rm devbox
+	docker kill $(DOCKER_NAME)
+	docker rm $(DOCKER_NAME)
