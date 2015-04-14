@@ -90,9 +90,6 @@ Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
 
 
 
-
-
-
 ### Explication de la solution
 
 * Ce qui est necessaire pour comprendre la demo (sous forme de dessin)
