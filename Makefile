@@ -27,12 +27,12 @@ presentation:
 
 test:
 	docker run \
-		-v $(CURDIR)/tests/bats:/bats-tests \
+		-v $(CURDIR):/app \
 		-v $$(which docker):$$(which docker) \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
 		dduportal/bats:0.4.0 \
-			/bats-tests/
+			/app/tests/bats/
 
 clean:
 	docker kill devbox
