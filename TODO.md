@@ -32,7 +32,7 @@
 * [x] faire le plan
 * [x] clarifier ce qu'on veut que les auditeurs "ramènent chez eux"
 
-* [ ] Est-ce que le slide show fonctionne aussi off-line ?
+* [x] Est-ce que le slide show fonctionne aussi off-line ? Maintenant Oui (remark min JS + fonts googles avec css font google)
 
 
 ## Nice to have
