@@ -1,4 +1,4 @@
-.PHONY: build shell test all presentation start clean
+.PHONY: build shell test all presentation start clean backup
 
 DOCKER_IMAGE := cpt_igloo/devbox
 DOCKER_NAME = devbox
@@ -33,6 +33,10 @@ test:
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
 		dduportal/bats:0.4.0 \
 			/app/tests/bats/
+
+backup:
+	docker exec --detach $(DOCKER_NAME) tar czf /tmp/bkp-data-latest.tgz /data/
+	docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
 
 clean:
 	docker kill devbox
