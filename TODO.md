@@ -17,9 +17,9 @@
 
 * [ ] Test docker inside devbox
 * [ ] Faire une démo d'un dévelopement (spring boot)
-	* [ ] depot Github séparé
-	* [ ] configurer maven
-	* [ ] faire fonctionner le build maven depuis la ligne de commande
+	* [x] depot Github séparé
+	* [x] configurer maven
+	* [x] faire fonctionner le build maven depuis la ligne de commande
 	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
 
 * [ ] remove docker-bats directory
