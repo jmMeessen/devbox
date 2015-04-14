@@ -84,3 +84,7 @@ teardown() {
 @test "/data folder is writeable by dockerx" {
 	run_as_user_cmd_in_devbox "dockerx" touch /data/test_file
 }
+
+@test "Check GIT presence" {
+	run_as_user_cmd_in_devbox "dockerx" which git
+}

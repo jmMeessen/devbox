@@ -66,6 +66,7 @@ COPY configs/idea.png /opt/idea/idea.png
 # Configure things for dockerx user
 USER dockerx
 COPY configs/lxde-main-panel /home/dockerx/.config/lxpanel/LXDE/panels/panel
+COPY configs/settings.xml /home/dockerx/.m2/settings.xml
 USER root
 COPY configs/idea.desktop /usr/share/applications/idea.desktop
 COPY configs/idea.png /opt/idea/idea.png
@@ -76,6 +77,8 @@ RUN cd /opt; wget -O - \
     && ln -s /opt/firefox/firefox /usr/local/bin/
 
 COPY configs/firefox.desktop /usr/share/applications/firefox.desktop
+
+#install GIT
 
 RUN chown -R dockerx:dockerx /data \
   && chmod -R 0750 /data
