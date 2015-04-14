@@ -9,6 +9,9 @@ h1, h2, h3 {
 .remark-code, .remark-inline-code { 
 	font-family: 'Ubuntu Mono'; 
 }
+.remark-slide-content {
+	padding-left: 2em;
+}
 .remark-slide-content h1 { font-size: 3em; }
 .remark-slide-content h2 { font-size: 2em; }
 .remark-slide-content h3 { font-size: 1.6em; }
@@ -97,12 +100,19 @@ code {
 /* Two-column layout */
 .left-column {
 	color: #777;
-	width: 20%;
+	width: 9em;
 	height: 92%;
 	float: left;
 }
 .left-column h1 {
-	font-size: 1.5em;
+	font-size: 2em;
+	text-align: center;
+}
+.left-column h2 {
+	font-size: 1.2em;
+}
+.left-column h3 {
+	font-size: 1em;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
 	color: #000;
@@ -111,4 +121,7 @@ code {
 	width: 75%;
 	float: right;
 	padding-top: 1em;
+}
+.right-column h1 {
+	text-align: center;
 }
