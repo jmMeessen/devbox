@@ -79,6 +79,7 @@ RUN cd /opt; wget -O - \
 COPY configs/firefox.desktop /usr/share/applications/firefox.desktop
 
 #install GIT
+RUN apt-get install -y --no-install-recommends git
 
 RUN chown -R dockerx:dockerx /data \
   && chmod -R 0750 /data

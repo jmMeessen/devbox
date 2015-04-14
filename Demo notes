@@ -1,5 +1,0 @@
-# Demo notes
-
-- download the demo program with `git clone https://github.com/jmMeessen/SpringBootDemo.git demo` while being in data.
-
-- move to demo directory and launch compile with `mvn install` 
