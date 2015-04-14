@@ -5,6 +5,7 @@
 
 * [x] Script shell de lancement de la devbox (avec partage docker socket + docker bin)
 * [ ] Script de "backup" du workspace (docker run --volume-from=devbox debian:wheezy -v /vagrant:/backup tar czf /data /backup/$(date).tgz ou truc du genre) 
+* [ ] make clean : utiliser la variable globale + confirmation 
 
 * [x] LXDE raccourci pour IntelliJ avec image
 * [x] LXDE IntelliJ dans main taskbar
