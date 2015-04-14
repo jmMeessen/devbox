@@ -22,7 +22,9 @@ shell:
 	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
 
 presentation:
-	@docker run -d -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
+	@docker kill $(DOCKER_NAME)-web
+	@docker rm $(DOCKER_NAME)-web
+	@docker run -d --name $(DOCKER_NAME)-web -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
 	@echo http://$$(boot2docker ip 2>/dev/null):80
 
 test:
