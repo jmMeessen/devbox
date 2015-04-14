@@ -7,5 +7,5 @@
 
 [ ] When X11 system starts it gives an error "SSH daemon failed to open the application's public key". Accepting it by clicking on "ok" makes it continue and the mains windows starts ok 
 
-[ ] GIT n'est plus dans la box. Il était installé implicitement au paravant.
+[x] GIT n'est plus dans la box. Il était installé implicitement au paravant.
 	   
