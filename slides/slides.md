@@ -45,7 +45,9 @@ layout: false
 
   ## Nous venons de Belgique, ...
 
-  **le pays du chocolat...**
+  &nbsp;
+
+  **Le pays du chocolat...**
 
 .center[![Chokotoff](pictures/chokotoff2.jpg)]
 
@@ -61,9 +63,31 @@ layout: false
 
   ## Nous venons de Belgique, ...
 
-  **le pays de la bière...**
+  &nbsp;
 
-.center[![BièresBelges](pictures/bieresBelges.jpg)]
+  **Le pays de la bière...**
+
+
+.center[![BièresBelges](pictures/belgianBeers.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  ## Nous venons de Belgique, ...
+
+  &nbsp;
+
+  **Le pays où on ne se prend pas trop au sérieux...**
+
+
+.center[![BièresBelges](pictures/belgianBeers.jpg)]
 
 ]
 
