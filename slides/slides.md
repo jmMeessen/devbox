@@ -1,12 +1,6 @@
-name: inverse
-layout: true
-class: center, middle, inverse
-
----
 class: center, middle, inverse
 
 # Devbox
-
 .footnote[Brought to you by <br>D. <b><u>Duportal</u></b> and J-M <b><u>Meessen</u></b>]
 
 ---
@@ -23,8 +17,8 @@ class: center, middle, inverse
 3. ...
 
 ---
-
-template: inverse
+layout: false
+class: center, middle, inverse
 
 # Introduction
 
@@ -481,4 +475,3 @@ template: inverse
 
 # The end
 ## Thanks ! Questions ?
-

@@ -69,26 +69,21 @@
 
 Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
 
-
-* Only the Code Tells the Truth (http://programming-motherfucker.com) : use you SCM tool as methodlogy enabler
-
-* "Nouvelles" pratiques - soft skills
-  * Agile (itération, proche du besoin, réactivité)
-  * The tests drive the development
-    * TDD/BDD
-  * DevOps (dev2prod, prod2dev, tendre vers l'iso prod, efficience en continuité avec l'agile)
-
+* (distributed) source management
+* The tests drive the development
+  * TDD/BDD
 * Continous*
   * IC
   * Continuous testing
   * Continuous benchmarking
   * Continuous delivery
 
-* "Human stack" (continuous and linear learning, trust, transparency, droit à l'erreur)
+* "Nouvelles" pratiques - soft skills
+  * Agile (itération, proche du besoin, réactivité)
+  * DevOps (dev2prod, prod2dev, tendre vers l'iso prod, efficience en continuité avec l'agile)
+  * "Human stack" (continuous and linear learning, trust, transparency, droit à l'erreur)
     ** Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
     ** Eat your own dog food
-
-
 
 ### Explication de la solution
 
