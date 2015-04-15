@@ -22,6 +22,8 @@ shell:
 	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
 
 presentation:
+	docker kill $(DOCKER_NAME)-web || :
+	docker rm $(DOCKER_NAME)-web || :
 	@docker run -d --name $(DOCKER_NAME)-web -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
 	@echo http://$$(boot2docker ip 2>/dev/null):80
 
@@ -42,6 +44,6 @@ clean:
 	docker kill $(DOCKER_NAME)
 	docker rm $(DOCKER_NAME)
 
-clean-pres:
-	docker kill $(DOCKER_NAME)-web
-	docker rm $(DOCKER_NAME)-web
+
+
+
