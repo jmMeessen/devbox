@@ -1,7 +1,8 @@
 .PHONY: build shell test all presentation start clean backup
 
 DOCKER_IMAGE := cpt_igloo/devbox
-DOCKER_NAME = devbox
+DOCKER_NAME = app_devbox_1
+PROXY_CACHE_DIR = /var/lib/boot2docker/proxy-cache
 
 all: build test
 
@@ -11,21 +12,13 @@ build:
 	cp -f configs/sessions ~/.x2goclient/
 
 start:
-	mkdir -p ~/work/mavenRepo/docker
-	docker start $(DOCKER_NAME) 2>/dev/null || docker run \
-		--name $(DOCKER_NAME) \
-		-d \
-		-p 2200:22 \
-		-v $$(which docker):$$(which docker) \
-		-v /var/run/docker.sock:/var/run/docker.sock \
-		-v ~/work/mavenRepo/docker:/data/mavenRepo \
-		-v /home/docker/.docker:/home/dockerx/.docker \
-		-e DOCKER_HOST=tcp://10.0.2.15:2376 \
-		-e DOCKER_TLS_VERIFY=1 \
-		$(DOCKER_IMAGE)
+	mkdir -p $(PROXY_CACHE_DIR) ~/work/mavenRepo/docker
+	chmod -R 777 $(PROXY_CACHE_DIR)
+	docker-compose build
+	docker-compose up -d
 
-shell: start
-	docker exec --tty --interactive $(DOCKER_NAME) bash -l
+shell:
+	docker-compose run devbox sudo -u dockerx bash -l
 
 gui: start
 	/Applications/x2goclient.app/Contents/MacOS/x2goclient \

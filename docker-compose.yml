@@ -1,0 +1,26 @@
+data:
+  image: debian:wheezy
+  volumes:
+    - /data
+    - /var/log
+    - /proxy-cache
+  net: "none"
+squid:
+  image: jpetazzo/squid-in-a-can
+  environment:
+    DISK_CACHE_SIZE: 10000
+    MAX_CACHE_OBJECT: 10000
+  net: "host"
+  volumes:
+  - /path/to/cache:/var/cache/squid3
+devbox:
+  build: ./
+  ports:
+    - "2200:22"
+  volumes_from:
+    - data
+  volumes:
+    - /usr/local/bin/docker:/usr/local/bin/docker
+    - /var/run/docker.sock:/var/run/docker.sock
+  environment:
+  - DOCKER_HOST=unix:///var/run/docker.sock
