@@ -1,6 +1,10 @@
+title: Devbox in Docker
+description: A Devbox in Docker : how to use your dev as a part of your application
+name: inverse
+layout: true
 class: center, middle, inverse
 
-# Devbox
+# Devbox in Docker
 .footnote[Brought to you by <br>D. <b><u>Duportal</u></b> and J-M <b><u>Meessen</u></b>]
 
 ---
@@ -8,10 +12,6 @@ class: center, middle, inverse
 # Agenda
 
 1. Introduction
-
-  - De quoi allons nous parler ?
-  - Qui sommes nous ?
-  - Qui êtes vous ?
 
 2. Un peu de théorie ...
 
@@ -316,10 +316,10 @@ layout: false
   # "La vérité est dans le code"
   (http://programming-motherfucker.com)
 
-  Utilisez des SCMs, préférerrez des décentralisés qui ouvre la voie à de nouvelles façons de travailler :
+  Utilisez des SCMs, si possible des DVCS => nouvelles façons de travailler :
+
 
   FIXME : Image du graph Github pour *Github wokflow*
-  OK ?
 
   .center[![GitWorkflow](pictures/gitflow.jpg)]
 ]
@@ -340,6 +340,9 @@ layout: false
   * Agile
   * TDD/BDD/Doc. as code
   * DevOps
+
+
+  .center[![Iterate](pictures/iterate.png)]
 ]
 
 ---
@@ -358,6 +361,8 @@ layout: false
   * Cotinuous documentation
   * Continuous Benchmarking
   * Continuous delivery
+
+.center[![Iterate](pictures/continuousintegrationcycle.png)]
  
 ]
 
@@ -372,12 +377,18 @@ layout: false
 ]
 .right-column[
 
-# "Human stack" : culture 
-* (continuous and linear learning, trust, transparency, droit à l'erreur)
-* Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
+# "Human stack" 
+
+.center[
+## Culture
+![Default-aligned image](pictures/vitr.jpg)
+## Confiance
+
+]
+* Compagnonnage 
 * Eat your own dog food
 
-![Default-aligned image](pictures/vitr.jpg)
+
  
 ]
 
