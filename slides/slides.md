@@ -123,7 +123,7 @@ layout: false
 
   .center[![iglo](pictures/Ancien_logo_Captain_Iglo.gif)]
 
-  * Senior developer @ Worldline, coach, development infrastructure
+  * Senior developer @ Worldline, newcomer coach, development infrastructure
 
   * Developement Middleware sur Fuse / ServiceMix / Camel
 
@@ -192,7 +192,7 @@ layout: false
 
   * Toujours aussi enthousiaste pour apprendre et partager
   
-  * BUT, one of my big frustration : Wasted (unfocused energy) at the start of a every new adventure
+  * MAIS, une de mes grandes frustration : La perte de temps et d'énergie au démarrage de chaque nouvelle aventure.
 ]
 ???
 "30 dernieres années" : 
@@ -214,21 +214,26 @@ layout: false
   ## Quel est le problème ?
 ]
 .right-column[
-
-  # Quel est le problème ?
+  # Quel est le problème ? **FIXME**
   * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
-  
   * La mise en place de l'environement prend beaucoup de temps
     * Demarrage en trombe, mais dans les graviers...
 
-.center[![Sortie de piste](pictures/sortieDePiste.png)]
+  .left[![Sortie de piste](pictures/sortieDePiste.png)]
 
-  * perte du focus
-  * Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
+  * ~~Nivellement par le bas~~
   * très rapide à déployer et du premier coup
+  * coût de maintenance
+
+---
+???
+  * perte du focus
+  
   * et je ne parle pas de l'env d'integration
+
   * Maintenance d'un environnement de dévelopement == douleur
     * "Just In Time" : c'est au moment des "onboardings" qu'on a découvre les problèmes, comportement homogène dans le temps
+
     * Maintenance et maJ : montée de version  de IDE / JDK / etc.
     * Coût : comment le mesurer pour l'anticiper voire le diminuer 
 ]
@@ -241,11 +246,13 @@ layout: false
   ## Solutions ?
 ]
 .right-column[
-  # Solutions "avant"
+  # Solutions "d'avant"
 
   * les terminaux sur le mainframe
-  * les PC avec images (quid des utilisateurs nomades)
-  * virtualisation avec Vagrant/VB par exemple
+
+  * les PC avec images (quid des utilisateurs nomades ?)
+
+  * virtualisation avec Vagrant/VB par ex
 
 ]
 
@@ -259,10 +266,10 @@ layout: false
 ]
 .right-column[
   # Constat
-
   * DEVBOX = TOOLBOX = Trousse à outils (=> trousse à outils + camion atelier)
 
-  * Constat : même problèmes, donc mêmes solutions (on est "top marketeux", on fait des acronymes ah ah)
+  .left[![Toolbox](pictures/toolbox.png)]
+  * même problèmes, donc mêmes solutions ...
     * DaaT : Devbox as a Tool (comme avant)
     * DaaS : Devbox as a Software
     * DaaI : Devbox as an Infrastructure
@@ -281,13 +288,12 @@ layout: false
 .right-column[
   # Docker !
 
-  * Docker résouds le pb de Matrix of hell
+  * Docker résouds le pb de "Matrix of hell"
   * Docker contractualise
   * Docker est rapide
   * Docker est "à la mode"
-    * rend des choses qu'on fesait depuis longtemps tres bon marche
-      * utilisation du GPS
-  * nouveau produits/nouvelles utilisations
+  * Permet de nouveaux produits/solutions
+    * Souvenez vous de la "libération" du GPS par B. Clinton
 
 ]
 ---
