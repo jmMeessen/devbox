@@ -5,6 +5,7 @@
 
 * [x] Script shell de lancement de la devbox (avec partage docker socket + docker bin)
 * [ ] Script de "backup" du workspace (docker run --volume-from=devbox debian:wheezy -v /vagrant:/backup tar czf /data /backup/$(date).tgz ou truc du genre) 
+* [ ] make clean : utiliser la variable globale + confirmation 
 
 * [x] LXDE raccourci pour IntelliJ avec image
 * [x] LXDE IntelliJ dans main taskbar
@@ -27,11 +28,11 @@
 
 ## Slide related TODO
 
-* [ ] faire le plan
-* [ ] clarifier ce qu'on veut que les auditeurs "ramènent chez eux"
+* [x] make presentation est idempotent
+* [x] faire le plan
+* [x] clarifier ce qu'on veut que les auditeurs "ramènent chez eux"
 
-* [ ] changer le fond d'un slide
-* [ ] Est-ce que le slide show fonctionne aussi off-line ?
+* [x] Est-ce que le slide show fonctionne aussi off-line ? Maintenant Oui (remark min JS + fonts googles avec css font google)
 
 
 ## Nice to have

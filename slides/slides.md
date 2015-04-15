@@ -9,12 +9,13 @@ class: center, middle, inverse
 
 1. Introduction
 
-  - What the talk is about (and not)
-  - Who we are 
-  - Who are you ?
+  - De quoi allons nous parler ?
+  - Qui sommes nous ?
+  - Qui êtes vous ?
 
-2. Deep-dive
-3. ...
+2. Un peu de théorie ...
+
+3. Des démos ...
 
 ---
 layout: false
@@ -25,27 +26,159 @@ class: center, middle, inverse
 ---
 layout: false
 .left-column[
-# Introduction
+# Intro
   ## Qui sommes-nous ?
 ]
 .right-column[
-  ## Jean-Marc MEESSEN
 
-  ## Damien DUPORTAL
+# Nous venons de Belgique
+
 ]
 
 ---
 layout: false
 .left-column[
-# Introduction
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  # Nous venons de Belgique
+
+  &nbsp;
+
+  **Le pays du chocolat...**
+
+.center[![Chokotoff](pictures/chokotoff2.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  # Nous venons de Belgique
+
+  &nbsp;
+
+  **Le pays de la bière...**
+
+
+.center[![BièresBelges](pictures/belgianBeers.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  # Nous venons de Belgique
+
+  &nbsp;
+
+  **Le pays où on ne se prend pas (trop) au sérieux...**
+
+
+.center[![BlagueBelge](pictures/defile20106.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+
+  # Nous venons de Belgique
+
+  &nbsp;
+
+  **Le pays où on tourne en rond ?**
+
+
+.center[![BlagueBelge](pictures/bruxelles_brussels.jpg)]
+
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+  # Jean-Marc MEESSEN
+
+  Vous pourriez  me retrouver dans un surgelateur de grande surface
+
+  .center[![iglo](pictures/Ancien_logo_Captain_Iglo.gif)]
+
+  * Senior developer @ Worldline, coach, development infrastructure
+
+  * Developement Middleware sur Fuse / ServiceMix / Camel
+
+  * Trop timide pour participer activement à des projets Open Source. Quelques contributions à Asciidoctor et Freeplane.
+
+  * `jean-marc@meessen-web.org`, `@JM_Meessen`
+
+]
+
+---
+
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+]
+.right-column[
+  # Damien DUPORTAL
+]
+
+---
+layout: false
+.left-column[
+# Intro
   ## Qui sommes-nous ?
   ## Remerciements
 ]
 .right-column[
-  ## Merci !
+  # Merci !
+
   * Organisateurs et bénévoles Mix-It 
+
   * à vous, de venir !
-  * Au personnes ayant réalisé et crus en ces outils
+
+  * Aux personnes ayant réalisé et crus en ces outils
+]
+
+---
+layout: false
+.left-column[
+# Intro
+  ## Qui sommes-nous ?
+  ## Remerciements
+  ## Et vous ?
+]
+.right-column[
+  # Faisons connaissance...
+
+  * Des devs ? Des Ops ? Des chefs ? Autre ?
+
+  * Des seniors (des vrais) ? Des moins seniors ? Des juniors ?
+
+  * Expérience avec la virtualisation ?
+
+  * Vous souvenez-vous de votre premier emploi ?
 ]
 
 ---
@@ -54,17 +187,25 @@ layout: false
 # Pourquoi ce talk ?
 ]
 .right-column[
-  ## Pourquoi ce talk ?
-  * seen a lot in nearly 30 years in IT
-    * victories / failures
-    * great peoples
-  * still as enthousiastic to learn/share
-    * great stuff out there (admirative)
-    * make people's life easier
-    * I want to share why I am proud of what I do
-    * hope to be able to continue even after retirement
+  # Pourquoi ce talk ?
+  * J'ai participé à beaucoup d'aventures ces 30 dernières années.
+
+  * Toujours aussi enthousiaste pour apprendre et partager
+  
   * BUT, one of my big frustration : Wasted (unfocused energy) at the start of a every new adventure
 ]
+???
+"30 dernieres années" : 
+  * aventures informatiques
+  * au moins pour Jmm
+  * beaucoup de belles victoires, des échecs...
+  * des "jerks", mais surtout des gens géniaux
+
+## enthousiastes
+* admiratif des choses extraordinaires qu'il y "là dehors" 
+* rendre la vie des gens plus facile et agréable
+* Je suis fier de ce que je fais et je veux le partager (ex: new comers)
+* J'espère pouvoir continuer à être enthousiaste et partageur au dela de ma penssion
 
 ---
 layout: false
@@ -73,9 +214,15 @@ layout: false
   ## Quel est le problème ?
 ]
 .right-column[
-  ## Quel est le problème ?
-  * Wasted High power moment (high energy)
-  * Setup of a work environement takes lot of time (comme une sortie de piste, dans les graviers)
+
+  # Quel est le problème ?
+  * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
+  
+  * La mise en place de l'environement prend beaucoup de temps
+    * Demarrage en trombe, mais dans les graviers...
+
+.center[![Sortie de piste](pictures/sortieDePiste.png)]
+
   * perte du focus
   * Necessite d'avoir l'environement de DEV le plus riche possible (state of the art). Pas de nivellement par le bas.
   * très rapide à déployer et du premier coup
@@ -94,7 +241,7 @@ layout: false
   ## Solutions ?
 ]
 .right-column[
-  ## Solutions "avant"
+  # Solutions "avant"
 
   * les terminaux sur le mainframe
   * les PC avec images (quid des utilisateurs nomades)
@@ -111,7 +258,7 @@ layout: false
   ## Constat
 ]
 .right-column[
-  ## Constat
+  # Constat
 
   * DEVBOX = TOOLBOX = Trousse à outils (=> trousse à outils + camion atelier)
 
@@ -132,7 +279,7 @@ layout: false
   ## Docker !
 ]
 .right-column[
-  ## Docker !
+  # Docker !
 
   * Docker résouds le pb de Matrix of hell
   * Docker contractualise
@@ -148,20 +295,9 @@ layout: false
 template: inverse
 
 
-# Utiliser les recettes de l'ingénierie logicielle *moderne*
+# Utiliser les recettes de l'ingénierie logicielle 
+## Nous sommes TOUS des ingénieurs "Full stack"
 
-
----
-layout: false
-.left-column[
-# "Full stack" Engineer
-
-]
-.right-column[
-  ## "Full stack" Engineer
-
-  Que disent les pratiques d'ingénieurie logicielle (plus ou moins) modernes ?
-]
 
 ---
 layout: false
@@ -171,7 +307,7 @@ layout: false
 
 ]
 .right-column[
-  ## "La vérité est dans le code"
+  # "La vérité est dans le code"
   (http://programming-motherfucker.com)
 
   Utilisez des SCMs, préférerrez des décentralisés qui ouvre la voie à de nouvelles façons de travailler :
@@ -184,11 +320,11 @@ layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
 
 ]
 .right-column[
-  ## "Nouvelles" pratiques
+  # "Nouvelles" pratiques
 
   N'ayons pas peur d'_essayer_, *plusieurs fois* toutes ces nouvelles façons de faire, sans être dogmatiques
 
@@ -202,11 +338,11 @@ layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
   ## Continous*
 ]
 .right-column[
-  ## Continous*
+  # Continous*
 
   * Continous Integration
   * Continuous Testing (TDD right ?)
@@ -217,26 +353,22 @@ layout: false
 ]
 
 ---
-template: inverse
-
-# "Human stack"
-
-![Default-aligned image](pictures/vitr.jpg)
-
----
 layout: false
 .left-column[
 # "Full stack" Engineer
   ## Code == Valeur
-  ## "Nouvelles" pratiques
+  ## Nouvelles pratiques
   ## Continous*
   ## "Human Stack"
 ]
 .right-column[
-  ## "Human stack" 
-    * (continuous and linear learning, trust, transparency, droit à l'erreur)
-    * Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
-    * Eat your own dog food
+
+# "Human stack" : culture 
+* (continuous and linear learning, trust, transparency, droit à l'erreur)
+* Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
+* Eat your own dog food
+
+![Default-aligned image](pictures/vitr.jpg)
  
 ]
 
@@ -251,7 +383,7 @@ layout: false
 # Démo Time !
 ]
 .right-column[
-  ## Démo Time !
+  # Démo Time !
 
   * Contexte : spring boot "hello world" application
   * Java DK, Maven, IntelliJ Idea, Docker, Compose
@@ -271,7 +403,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## SCM :Git (on Github)
+  # SCM :Git (on Github)
 
   * Public
   * Partagé
@@ -286,7 +418,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## TDD/BDD
+  # TDD/BDD
 
   Utilisation de [bats](https://github.com/sstephenson/bats) au maximum
   * BDD oriented :
@@ -304,7 +436,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Continuous*
+  # Continuous*
 
   Utilisation de [CircleCI](https://circleci.com) :
   * Github-hook based (push == build)
@@ -321,7 +453,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Docker stack
+  # Docker stack
 
   Utilisation de [boot2docker](https://boot2docker.io) :
   * Mutli-plateforme (virtualbox)
@@ -336,7 +468,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Cinématique
+  # Cinématique
 
   Utilisation de [GNU Make](https://www.gnu.org/software/make/) :
   * Indépendance cinémtique / outils (passage à packer ou rocket ?)
@@ -351,7 +483,7 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  ## Demo 1 : 
+  # Demo 1 : 
 
   FIXME : schema global
  
@@ -370,10 +502,16 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Données ?
 
-  * Docker's data volume
-  * Make backup
+# Données
+
+  * Comment conserver ses données si on détruit/met à jour la VM ?
+  * Comment sauvegarder ses données ?
+
+# Réseau 
+
+  * Travailleurs nomades, pauvres employé de SSI...
+  * Ressources locales : cache proxy, registre docker, cache Maven) ?
  
 ]
 
@@ -385,10 +523,11 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Connectivité Web 
+  # Devbox as an infrastructure
 
-  * Travailleur nomades, pauvres employé de SSI
-  * Local ressources (proxy-cache, docker-registry, etc.)
+  Solution : Docker-compose ! 
+
+FIXME : docker.yml
  
 ]
 
@@ -400,21 +539,7 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  ## Docker-compose ! 
-
-FIXMe : docker.yml
- 
-]
-
----
-layout: false
-.left-column[
-# Démo Time !
-  ## Devbox as a code
-  ## Devbox as an infrastructure
-]
-.right-column[
-  ## Demo 2 : 
+  # Demo 2 : 
 
   FIXME : schema global
  
@@ -428,32 +553,11 @@ template: inverse
 ---
 layout: false
 .left-column[
-# Démo Time !
-  ## Devbox as a code
-  ## Devbox as an infrastructure
-  ## Devbox 0 downtime
-]
-.right-column[
-  ## Demo 3 : 
-
-  => Update de qque chose (installation d'un package) avec version
-  FIXME : schema global
- 
-]
-
----
-template: inverse
-
-# Demo 3
-
----
-layout: false
-.left-column[
 # Conclusion
   ## Qu'à t'on appris ?
 ]
 .right-column[
-  ## Qu'à t'on appris ?
+  # Qu'à t'on appris ?
 
  * j'ai appris de nouvelles technos (amélioré ma pratique)
   * Docker
@@ -468,6 +572,30 @@ layout: false
   * Il y a encore du travail
   * j'attend avec impatience l'épreuve du feu (situation réelle)
 
+]
+
+---
+layout: false
+.left-column[
+# Conclusion
+  ## Qu'à t'on appris ?
+  ## Le bon et le moins bon
+]
+.right-column[
+
+# Pas cool
+* GUI : des difficultés et bugs bizarre
+* Adhésion et motivation nécessaires
+
+# Cool
+* Performances 
+* CLI : parfait
+* Excellent indicateur de la culture de vos devs.
+
+# Améliorations
+* Processus de release rigoureux avec le DockerHub
+* Plus d'automatisation (x2go commande line)
+* README à améliorer (contributions ? )
 ]
 
 ---
