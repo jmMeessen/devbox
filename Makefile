@@ -1,4 +1,4 @@
-.PHONY: build shell test all presentation start clean clean-pres backup
+.PHONY: build shell test all presentation start clean backup
 
 DOCKER_IMAGE := cpt_igloo/devbox
 DOCKER_NAME = devbox
@@ -15,6 +15,7 @@ start:
 		-p 2200:22 \
 		-v $$(which docker):$$(which docker) \
 		-v /var/run/docker.sock:/var/run/docker.sock \
+		-v /Users/jmm/work/mavenRepo/docker/:/data/mavenRepo \
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
 		$(DOCKER_IMAGE)
 
