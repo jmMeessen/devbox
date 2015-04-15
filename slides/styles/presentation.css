@@ -120,8 +120,8 @@ code {
 .right-column {
 	width: 75%;
 	float: right;
-	padding-top: 1em;
 }
 .right-column h1 {
 	text-align: center;
+	margin-top: 0em;
 }
