@@ -7,20 +7,27 @@ all: build test
 
 build:
 	docker build --tag "$(DOCKER_IMAGE)" .
+	mkdir -p ~/.x2goclient
+	cp -f configs/sessions ~/.x2goclient/
 
 start:
+	mkdir -p ~/work/mavenRepo/docker
 	docker start $(DOCKER_NAME) 2>/dev/null || docker run \
 		--name $(DOCKER_NAME) \
 		-d \
 		-p 2200:22 \
 		-v $$(which docker):$$(which docker) \
 		-v /var/run/docker.sock:/var/run/docker.sock \
-		-v /Users/jmm/work/mavenRepo/docker/:/data/mavenRepo \
+		-v ~/work/mavenRepo/docker:/data/mavenRepo \
 		-e DOCKER_HOST=unix:///var/run/docker.sock \
 		$(DOCKER_IMAGE)
 
 shell:
 	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
+
+gui:
+	/Applications/x2goclient.app/Contents/MacOS/x2goclient \
+		--session=devbox
 
 presentation:
 	docker kill $(DOCKER_NAME)-web || :
