@@ -1,29 +1,26 @@
+title: devbox
+name: inverse
+layout: true
 class: center, middle, inverse
-
-# Devbox
-.footnote[Brought to you by <br>D. <b><u>Duportal</u></b> and J-M <b><u>Meessen</u></b>]
+---
+# Devbox in Docker
 
 ---
+layout:false
 
-# Agenda
+# Agenda :
 
 1. Introduction
-
-  - De quoi allons nous parler ?
-  - Qui sommes nous ?
-  - Qui êtes vous ?
-
-2. Un peu de théorie ...
-
-3. Des démos ...
-
+2. Pourquoi ce talk ?
+3. "Full stack" Engineer
+4. Demo time !
 ---
-layout: false
-class: center, middle, inverse
+template: inverse
 
 # Introduction
 
 ---
+
 layout: false
 .left-column[
 # Intro
@@ -141,7 +138,22 @@ layout: false
   ## Qui sommes-nous ?
 ]
 .right-column[
-  # Damien DUPORTAL
+# Damien DUPORTAL
+
+.center[![dduportal](pictures/dduportal.jpg)]
+
+* DevOps Engineer @ Worldline
+
+* Grimpeur
+* Français émigré en Belgique
+* Enseignant la HA et les SIGs (ENSG, EPSI)
+
+* Contact :
+  * [Gmail](damien.duportal@gmail.com)
+  * [Twitter](@DamienDuportal)
+  * [Github](https://github.com/dduportal)
+
+
 ]
 
 ---
@@ -182,6 +194,11 @@ layout: false
 ]
 
 ---
+template: inverse
+
+# Pourquoi ce talk ?
+
+---
 layout: false
 .left-column[
 # Pourquoi ce talk ?
@@ -214,28 +231,22 @@ layout: false
   ## Quel est le problème ?
 ]
 .right-column[
-  # Quel est le problème ? **FIXME**
-  * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
-  * La mise en place de l'environement prend beaucoup de temps
-    * Demarrage en trombe, mais dans les graviers...
 
-  .left[![Sortie de piste](pictures/sortieDePiste.png)]
+# Quel est le problème ?
 
-  * ~~Nivellement par le bas~~
-  * très rapide à déployer et du premier coup
-  * coût de maintenance
+* Gaspillage d'énergie au mauvais moment
 
----
-???
-  * perte du focus
-  
-  * et je ne parle pas de l'env d'integration
+* Mise en place de l'environement coûteuse :
 
-  * Maintenance d'un environnement de dévelopement == douleur
-    * "Just In Time" : c'est au moment des "onboardings" qu'on a découvre les problèmes, comportement homogène dans le temps
+.left[![Sortie de piste](pictures/sortieDePiste.png)]
 
-    * Maintenance et maJ : montée de version  de IDE / JDK / etc.
-    * Coût : comment le mesurer pour l'anticiper voire le diminuer 
+* coût de maintenance
+
+* "Nivellement par le bas"
+
+## Objectif : 
+Devbox *très* rapide à déployer et du premier coup
+
 ]
 
 ---
@@ -265,15 +276,18 @@ layout: false
   ## Constat
 ]
 .right-column[
-  # Constat
-  * DEVBOX = TOOLBOX = Trousse à outils = Camion atelier
+# Constat
 
-  .left[![Toolbox](pictures/toolbox.png)]
-  * même problèmes, donc mêmes solutions ...
-    * DaaT : Devbox as a Tool (comme avant)
-    * DaaS : Devbox as a Software
-    * DaaI : Devbox as an Infrastructure
-    * DaaLt :Devbox as a Learning tool
+* DEVBOX = TOOLBOX = Trousse à outils = Camion atelier
+
+.center[![Toolbox](pictures/toolbox.png)]
+
+* Même problèmes, donc mêmes solutions ...
+  * DaaT : Devbox as a Tool (comme avant)
+  * DaaS : Devbox as a Software
+  * DaaI : Devbox as an Infrastructure
+  * DaaLt :Devbox as a Learning tool
+
 ]
 
 ---
@@ -294,6 +308,8 @@ layout: false
   * Docker est "à la mode"
   * Permet de nouveaux produits/solutions
     * Souvenez vous de la "libération" du GPS par B. Clinton
+
+.center[![HellMatrix](pictures/eliminates-matrix-from-hell.png)]
 
 ]
 ---
@@ -316,12 +332,9 @@ layout: false
   # "La vérité est dans le code"
   (http://programming-motherfucker.com)
 
-  Utilisez des SCMs, préférerrez des décentralisés qui ouvre la voie à de nouvelles façons de travailler :
+  Utilisez des SCMs, si possible des DVCS => nouvelles façons de travailler :
 
-  FIXME : Image du graph Github pour *Github wokflow*
-  OK ?
-
-  .center[![GitWorkflow](pictures/gitflow.jpg)]
+  .center[![GitWorkflow](pictures/scms.png)]
 ]
 
 ---
@@ -340,6 +353,9 @@ layout: false
   * Agile
   * TDD/BDD/Doc. as code
   * DevOps
+
+
+  .center[![Iterate](pictures/iterate.png)]
 ]
 
 ---
@@ -358,6 +374,8 @@ layout: false
   * Cotinuous documentation
   * Continuous Benchmarking
   * Continuous delivery
+
+.center[![Iterate](pictures/continuousintegrationcycle.png)]
  
 ]
 
@@ -372,12 +390,17 @@ layout: false
 ]
 .right-column[
 
-# "Human stack" : culture 
-* (continuous and linear learning, trust, transparency, droit à l'erreur)
-* Compagnonage (on fabrique ses propres outils comme partie de l'apprentissage)
+# "Human stack" 
+
+.center[
+## Culture
+![Default-aligned image](pictures/vitr.jpg)
+## Confiance
+
+]
+* "Compagnonnage" 
 * Eat your own dog food
 
-![Default-aligned image](pictures/vitr.jpg)
  
 ]
 
@@ -417,6 +440,9 @@ layout: false
   * Public
   * Partagé
   * Pull-Request systématique (Github workflow)
+
+.center[![GitWorkflow](pictures/gitflow.jpg)]
+
  
 ]
 
@@ -429,13 +455,27 @@ layout: false
 .right-column[
   # TDD/BDD
 
-  Utilisation de [bats](https://github.com/sstephenson/bats) au maximum
-  * BDD oriented :
-FIXME : code example d'un test
-  * Bash based : compromis "bootstrap rapide" vs. maintenabilité
-  * Objectif pour une PR : test, puis impl à chaque fois !
-  * Pragamtisme : ne pas tout tester non plus, par petits pas !
- 
+  Utilisation de [Bats](https://github.com/sstephenson/bats) (testing en bash) au maximum
+
+```shell
+@test "Check JDK presence" {
+  docker run --user "dockerx" which java
+}
+```
+
+  * Test Driven Developemt (BDD) oriented
+  * Basé sur Bash : compromis "démarrage rapide" vs. maintenabilité
+  * Objectif pour une fonctionnalité : 
+    * Rouge : Rédaction des tests qui vont être "fail" 
+    * Green : Implémentation, c'est OK 
+  * Pragmatisme : ne pas tout tester non plus, par petits pas !
+
+
+Lancement facile :
+```bash
+$ make test
+```
+
 ]
 
 ---
@@ -448,10 +488,24 @@ layout: false
   # Continuous*
 
   Utilisation de [CircleCI](https://circleci.com) :
-  * Github-hook based (push == build)
+
+  * Basé sur les hooks Github (git push == build)
   * Support de Docker
-  * Configuration as a code
-FIXME : extrai de circle.yml
+  * Configuration as a code :
+
+```yaml
+circle.yml:
+
+machine:
+    services:
+    - docker
+dependencies:
+  override:
+    - make build
+test:
+  override:
+    - make test
+```
  
 ]
 
@@ -465,7 +519,7 @@ layout: false
   # Docker stack
 
   Utilisation de [boot2docker](https://boot2docker.io) :
-  * Mutli-plateforme (virtualbox)
+  * Multi-plateforme (virtualbox)
   * Support officiel de Docker
  
 ]
@@ -482,6 +536,23 @@ layout: false
   Utilisation de [GNU Make](https://www.gnu.org/software/make/) :
   * Indépendance cinémtique / outils (passage à packer ou rocket ?)
   * Multi-platforme
+
+```bash
+Makefile:
+
+all: build test
+
+build:
+  ...
+start:
+  ...
+test:
+  ...
+backup:
+  ...
+clean:
+  ...
+```
  
 ]
 
