@@ -14,11 +14,17 @@ layout:false
 2. Pourquoi ce talk ?
 3. "Full stack" Engineer
 4. Demo time !
+
+???
+(jmm)
+
 ---
 template: inverse
 
 # Introduction
 
+???
+(jmm)
 ---
 
 layout: false
@@ -31,6 +37,8 @@ layout: false
 # Nous venons de Belgique
 
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -49,6 +57,8 @@ layout: false
 .center[![Chokotoff](pictures/chokotoff2.jpg)]
 
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -67,7 +77,11 @@ layout: false
 
 .center[![BièresBelges](pictures/belgianBeers.jpg)]
 
+
 ]
+
+???
+Jmm
 
 ---
 layout: false
@@ -86,7 +100,10 @@ layout: false
 
 .center[![BlagueBelge](pictures/defile20106.jpg)]
 
+
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -106,7 +123,8 @@ layout: false
 .center[![BlagueBelge](pictures/bruxelles_brussels.jpg)]
 
 ]
-
+???
+Jmm
 ---
 layout: false
 .left-column[
@@ -129,6 +147,9 @@ layout: false
   * `jean-marc@meessen-web.org`, `@JM_Meessen`
 
 ]
+
+???
+jmm
 
 ---
 
@@ -156,6 +177,9 @@ layout: false
 
 ]
 
+???
+Damien
+
 ---
 layout: false
 .left-column[
@@ -172,6 +196,9 @@ layout: false
 
   * Aux personnes ayant réalisé et crus en ces outils
 ]
+
+???
+Damien
 
 ---
 layout: false
@@ -193,6 +220,8 @@ layout: false
   * Vous souvenez-vous de votre premier emploi ?
 ]
 
+???
+(jmm)
 ---
 template: inverse
 
@@ -212,6 +241,8 @@ layout: false
   * MAIS, une de mes grandes frustrations : La perte de temps et d'énergie au démarrage de chaque nouvelle aventure.
 ]
 ???
+jmm
+
 "30 dernieres années" : 
   * aventures informatiques
   * au moins pour Jmm
@@ -246,8 +277,17 @@ layout: false
 
 ## Objectif : 
 Devbox *très* rapide à déployer et du premier coup
-
 ]
+
+???
+  jmm
+
+  * perte du focus
+
+  * et je ne parle pas de l'env d'integration
+
+  * Maintenance et maJ : montée de version  de IDE / JDK / etc.
+  * Coût : comment le mesurer pour l'anticiper voire le diminuer 
 
 ---
 layout: false
@@ -266,6 +306,9 @@ layout: false
   * virtualisation avec Vagrant/VB par ex
 
 ]
+
+???
+jmm
 
 ---
 layout: false
@@ -290,6 +333,9 @@ layout: false
 
 ]
 
+???
+jmm
+
 ---
 layout: false
 .left-column[
@@ -312,6 +358,8 @@ layout: false
 .center[![HellMatrix](pictures/eliminates-matrix-from-hell.png)]
 
 ]
+???
+(jmm)
 ---
 
 template: inverse
@@ -409,6 +457,8 @@ template: inverse
 
 # Démo Time !
 
+???
+jmm
 ---
 layout: false
 .left-column[
@@ -427,6 +477,8 @@ layout: false
     * Portabilité
     * ? Legacy (reprendre old applications)
 ]
+???
+jmm
 
 ---
 layout: false
@@ -445,6 +497,8 @@ layout: false
 
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -477,6 +531,8 @@ $ make test
 ```
 
 ]
+???
+jmm
 
 ---
 layout: false
@@ -508,6 +564,8 @@ test:
 ```
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -523,6 +581,8 @@ layout: false
   * Support officiel de Docker
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -555,6 +615,8 @@ clean:
 ```
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -568,11 +630,16 @@ layout: false
   FIXME : schema global
  
 ]
+???
+jmm
 
 ---
 template: inverse
 
 # Demo 1
+
+???
+jmm
 
 ---
 layout: false
