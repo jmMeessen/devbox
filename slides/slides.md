@@ -17,12 +17,16 @@ class: center, middle, inverse
 
 3. Des démos ...
 
+???
+(jmm)
 ---
 layout: false
 class: center, middle, inverse
 
 # Introduction
 
+???
+(jmm)
 ---
 layout: false
 .left-column[
@@ -34,6 +38,8 @@ layout: false
 # Nous venons de Belgique
 
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -52,6 +58,8 @@ layout: false
 .center[![Chokotoff](pictures/chokotoff2.jpg)]
 
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -70,7 +78,11 @@ layout: false
 
 .center[![BièresBelges](pictures/belgianBeers.jpg)]
 
+
 ]
+
+???
+Jmm
 
 ---
 layout: false
@@ -89,7 +101,10 @@ layout: false
 
 .center[![BlagueBelge](pictures/defile20106.jpg)]
 
+
 ]
+???
+Jmm
 
 ---
 layout: false
@@ -109,7 +124,8 @@ layout: false
 .center[![BlagueBelge](pictures/bruxelles_brussels.jpg)]
 
 ]
-
+???
+Jmm
 ---
 layout: false
 .left-column[
@@ -133,6 +149,9 @@ layout: false
 
 ]
 
+???
+jmm
+
 ---
 
 layout: false
@@ -143,6 +162,9 @@ layout: false
 .right-column[
   # Damien DUPORTAL
 ]
+
+???
+Damien
 
 ---
 layout: false
@@ -160,6 +182,9 @@ layout: false
 
   * Aux personnes ayant réalisé et crus en ces outils
 ]
+
+???
+Damien
 
 ---
 layout: false
@@ -181,6 +206,8 @@ layout: false
   * Vous souvenez-vous de votre premier emploi ?
 ]
 
+???
+(jmm)
 ---
 layout: false
 .left-column[
@@ -195,6 +222,8 @@ layout: false
   * MAIS, une de mes grandes frustrations : La perte de temps et d'énergie au démarrage de chaque nouvelle aventure.
 ]
 ???
+jmm
+
 "30 dernieres années" : 
   * aventures informatiques
   * au moins pour Jmm
@@ -224,9 +253,11 @@ layout: false
   * ~~Nivellement par le bas~~
   * très rapide à déployer et du premier coup
   * coût de maintenance
+]
 
----
 ???
+  jmm
+
   * perte du focus
   
   * et je ne parle pas de l'env d'integration
@@ -236,7 +267,6 @@ layout: false
 
     * Maintenance et maJ : montée de version  de IDE / JDK / etc.
     * Coût : comment le mesurer pour l'anticiper voire le diminuer 
-]
 
 ---
 layout: false
@@ -255,6 +285,9 @@ layout: false
   * virtualisation avec Vagrant/VB par ex
 
 ]
+
+???
+jmm
 
 ---
 layout: false
@@ -276,6 +309,9 @@ layout: false
     * DaaLt :Devbox as a Learning tool
 ]
 
+???
+jmm
+
 ---
 layout: false
 .left-column[
@@ -296,6 +332,8 @@ layout: false
     * Souvenez vous de la "libération" du GPS par B. Clinton
 
 ]
+???
+(jmm)
 ---
 
 template: inverse
@@ -386,6 +424,8 @@ template: inverse
 
 # Démo Time !
 
+???
+jmm
 ---
 layout: false
 .left-column[
@@ -404,6 +444,8 @@ layout: false
     * Portabilité
     * ? Legacy (reprendre old applications)
 ]
+???
+jmm
 
 ---
 layout: false
@@ -419,6 +461,8 @@ layout: false
   * Pull-Request systématique (Github workflow)
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -437,6 +481,8 @@ FIXME : code example d'un test
   * Pragamtisme : ne pas tout tester non plus, par petits pas !
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -454,6 +500,8 @@ layout: false
 FIXME : extrai de circle.yml
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -469,6 +517,8 @@ layout: false
   * Support officiel de Docker
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -484,6 +534,8 @@ layout: false
   * Multi-platforme
  
 ]
+???
+jmm
 
 ---
 layout: false
@@ -497,11 +549,16 @@ layout: false
   FIXME : schema global
  
 ]
+???
+jmm
 
 ---
 template: inverse
 
 # Demo 1
+
+???
+jmm
 
 ---
 layout: false
