@@ -23,7 +23,7 @@ start:
 		$(DOCKER_IMAGE)
 
 shell:
-	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
+	docker exec --tty --interactive $(DOCKER_NAME) bash -l
 
 gui:
 	/Applications/x2goclient.app/Contents/MacOS/x2goclient \

@@ -104,5 +104,6 @@ VOLUME ["/data","/var/log","/tmp","/var/cache"]
 
 EXPOSE 22
 
+USER dockerx
 
 CMD ["/usr/local/bin/entrypoint.sh"]
