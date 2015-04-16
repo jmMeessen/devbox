@@ -7,14 +7,13 @@ PROXY_CACHE_DIR = /var/lib/boot2docker/proxy-cache
 all: build test
 
 build:
-	docker build --tag "$(DOCKER_IMAGE)" .
+	#docker build --tag "$(DOCKER_IMAGE)" .
+	docker-compose build
 	mkdir -p ~/.x2goclient
 	cp -f configs/sessions ~/.x2goclient/
 
 start:
-	mkdir -p $(PROXY_CACHE_DIR) ~/work/mavenRepo/docker
-	chmod -R 777 $(PROXY_CACHE_DIR)
-	docker-compose build
+	mkdir -p ~/work/mavenRepo/docker
 	docker-compose up -d
 
 shell:
@@ -44,8 +43,8 @@ backup:
 	docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
 
 clean:
-	docker kill $(DOCKER_NAME)
-	docker rm $(DOCKER_NAME)
+	docker-compose kill
+	docker-compose rm -f -v
 
 
 

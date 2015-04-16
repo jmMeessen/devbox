@@ -1,26 +1,31 @@
 data:
   image: debian:wheezy
+  command: chmod -R 777 /proxy-cache
   volumes:
     - /data
     - /var/log
     - /proxy-cache
   net: "none"
-squid:
-  image: jpetazzo/squid-in-a-can
-  environment:
-    DISK_CACHE_SIZE: 10000
-    MAX_CACHE_OBJECT: 10000
-  net: "host"
-  volumes:
-  - /path/to/cache:/var/cache/squid3
+proxy:
+  image: clue/polipo
+  command: diskCacheRoot=/proxy-cache logFile=/var/log/polipo.log
+  expose:
+    - "8123"
+  volumes_from:
+    - data
 devbox:
   build: ./
   ports:
     - "2200:22"
   volumes_from:
     - data
+  links:
+    - proxy
   volumes:
     - /usr/local/bin/docker:/usr/local/bin/docker
     - /var/run/docker.sock:/var/run/docker.sock
   environment:
   - DOCKER_HOST=unix:///var/run/docker.sock
+  - http_proxy=http://proxy:8123
+  - https_proxy=http://proxy:8123
+  - no_proxy=localhost,127.0.0.1
