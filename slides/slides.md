@@ -138,7 +138,22 @@ layout: false
   ## Qui sommes-nous ?
 ]
 .right-column[
-  # Damien DUPORTAL
+# Damien DUPORTAL
+
+.center[![dduportal](pictures/dduportal.jpg)]
+
+* DevOps Engineer @ Worldline
+
+* Grimpeur
+* Français émigré en Belgique
+* Enseignant la HA et les SIGs (ENSG, EPSI)
+
+* Contact :
+  * [Gmail](damien.duportal@gmail.com)
+  * [Twitter](@DamienDuportal)
+  * [Github](https://github.com/dduportal)
+
+
 ]
 
 ---
@@ -319,10 +334,7 @@ layout: false
 
   Utilisez des SCMs, si possible des DVCS => nouvelles façons de travailler :
 
-
-  FIXME : Image du graph Github pour *Github wokflow*
-
-  .center[![GitWorkflow](pictures/gitflow.jpg)]
+  .center[![GitWorkflow](pictures/scms.png)]
 ]
 
 ---
@@ -386,7 +398,7 @@ layout: false
 ## Confiance
 
 ]
-* Compagnonnage 
+* "Compagnonnage" 
 * Eat your own dog food
 
 
@@ -429,6 +441,9 @@ layout: false
   * Public
   * Partagé
   * Pull-Request systématique (Github workflow)
+
+.center[![GitWorkflow](pictures/gitflow.jpg)]
+
  
 ]
 
