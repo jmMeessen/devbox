@@ -7,17 +7,16 @@ PROXY_CACHE_DIR = /var/lib/boot2docker/proxy-cache
 all: build test
 
 build:
-	#docker build --tag "$(DOCKER_IMAGE)" .
-	docker-compose build
+	docker-compose -p app build
 	mkdir -p ~/.x2goclient
 	cp -f configs/sessions ~/.x2goclient/
 
 start:
 	mkdir -p ~/work/mavenRepo/docker
-	docker-compose up -d
+	docker-compose -p app up -d
 
 shell:
-	docker-compose run devbox sudo -u dockerx bash -l
+	docker exec -ti app_devbox_1 bash -l
 
 gui: start
 	/Applications/x2goclient.app/Contents/MacOS/x2goclient \
@@ -39,12 +38,12 @@ test:
 			/app/tests/bats/
 
 backup:
-	docker exec --detach $(DOCKER_NAME) tar czf /tmp/bkp-data-latest.tgz /data/
-	docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
+	docker-compose -p app run devbox tar czf /tmp/bkp-data-latest.tgz /data/
+	#docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
 
 clean:
-	docker-compose kill
-	docker-compose rm -f -v
+	docker-compose -p app kill
+	docker-compose -p app rm -f -v
 
 
 

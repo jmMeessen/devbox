@@ -5,6 +5,7 @@ data:
     - /data
     - /var/log
     - /proxy-cache
+    - ~/work/mavenRepo/docker:/data/mavenRepo 
   net: "none"
 proxy:
   image: clue/polipo
@@ -23,9 +24,10 @@ devbox:
     - proxy
   volumes:
     - /usr/local/bin/docker:/usr/local/bin/docker
-    - /var/run/docker.sock:/var/run/docker.sock
+    - /home/docker/.docker:/home/dockerx/.docker
   environment:
-  - DOCKER_HOST=unix:///var/run/docker.sock
+  - DOCKER_HOST=tcp://10.0.2.15:2376
+  - DOCKER_TLS_VERIFY=1
   - http_proxy=http://proxy:8123
   - https_proxy=http://proxy:8123
-  - no_proxy=localhost,127.0.0.1
+  - no_proxy=localhost,127.0.0.1,10.0.2.15
