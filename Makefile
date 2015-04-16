@@ -19,10 +19,12 @@ start:
 		-v $$(which docker):$$(which docker) \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-v ~/work/mavenRepo/docker:/data/mavenRepo \
-		-e DOCKER_HOST=unix:///var/run/docker.sock \
+		-v /home/docker/.docker:/home/dockerx/.docker \
+		-e DOCKER_HOST=tcp://10.0.2.15:2376 \
+		-e DOCKER_TLS_VERIFY=1 \
 		$(DOCKER_IMAGE)
 
-shell:
+shell: start
 	docker exec --tty --interactive $(DOCKER_NAME) bash -l
 
 gui:

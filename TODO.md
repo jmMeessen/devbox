@@ -18,7 +18,7 @@
 
 * [ ] Delete ISSUES.md (Use github Issues instead)
 
-* [ ] Use docker inside the VM (Docker host with IP ?)
+* [x] Use docker inside the VM (Docker host with IP ?)
 
 * [ ] Faire une démo d'un dévelopement (spring boot)
 	* [x] depot Github séparé
