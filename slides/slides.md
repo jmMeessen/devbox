@@ -276,15 +276,18 @@ layout: false
   ## Constat
 ]
 .right-column[
-  # Constat
-  * DEVBOX = TOOLBOX = Trousse à outils = Camion atelier
+# Constat
 
-  .left[![Toolbox](pictures/toolbox.png)]
-  * même problèmes, donc mêmes solutions ...
-    * DaaT : Devbox as a Tool (comme avant)
-    * DaaS : Devbox as a Software
-    * DaaI : Devbox as an Infrastructure
-    * DaaLt :Devbox as a Learning tool
+* DEVBOX = TOOLBOX = Trousse à outils = Camion atelier
+
+.center[![Toolbox](pictures/toolbox.png)]
+
+* Même problèmes, donc mêmes solutions ...
+  * DaaT : Devbox as a Tool (comme avant)
+  * DaaS : Devbox as a Software
+  * DaaI : Devbox as an Infrastructure
+  * DaaLt :Devbox as a Learning tool
+
 ]
 
 ---
@@ -305,6 +308,8 @@ layout: false
   * Docker est "à la mode"
   * Permet de nouveaux produits/solutions
     * Souvenez vous de la "libération" du GPS par B. Clinton
+
+.center[![HellMatrix](pictures/eliminates-matrix-from-hell.png)]
 
 ]
 ---
