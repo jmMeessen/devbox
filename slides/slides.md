@@ -1,29 +1,26 @@
-title: Devbox in Docker
-description: A Devbox in Docker : how to use your dev as a part of your application
+title: devbox
 name: inverse
 layout: true
 class: center, middle, inverse
-
+---
 # Devbox in Docker
-.footnote[Brought to you by <br>D. <b><u>Duportal</u></b> and J-M <b><u>Meessen</u></b>]
 
 ---
+layout:false
 
-# Agenda
+# Agenda :
 
 1. Introduction
-
-2. Un peu de théorie ...
-
-3. Des démos ...
-
+2. Pourquoi ce talk ?
+3. "Full stack" Engineer
+4. Demo time !
 ---
-layout: false
-class: center, middle, inverse
+template: inverse
 
 # Introduction
 
 ---
+
 layout: false
 .left-column[
 # Intro
@@ -182,6 +179,11 @@ layout: false
 ]
 
 ---
+template: inverse
+
+# Pourquoi ce talk ?
+
+---
 layout: false
 .left-column[
 # Pourquoi ce talk ?
@@ -225,7 +227,6 @@ layout: false
   * très rapide à déployer et du premier coup
   * coût de maintenance
 
----
 ???
   * perte du focus
   
