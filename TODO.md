@@ -23,7 +23,7 @@
 	* [x] faire fonctionner le build maven depuis la ligne de commande
 	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
 
-* [ ] remove docker-bats directory
+* [x] remove docker-bats directory
 * [ ] Lighten the final image
 
 ## Slide related TODO
