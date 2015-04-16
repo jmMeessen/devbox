@@ -231,27 +231,22 @@ layout: false
   ## Quel est le problème ?
 ]
 .right-column[
-  # Quel est le problème ? **FIXME**
-  * Souvent un gaspillage d'énergies (à un moment de très haute motivation)
-  * La mise en place de l'environement prend beaucoup de temps
-    * Demarrage en trombe, mais dans les graviers...
 
-  .left[![Sortie de piste](pictures/sortieDePiste.png)]
+# Quel est le problème ?
 
-  * ~~Nivellement par le bas~~
-  * très rapide à déployer et du premier coup
-  * coût de maintenance
+* Gaspillage d'énergie au mauvais moment
 
-???
-  * perte du focus
-  
-  * et je ne parle pas de l'env d'integration
+* Mise en place de l'environement coûteuse :
 
-  * Maintenance d'un environnement de dévelopement == douleur
-    * "Just In Time" : c'est au moment des "onboardings" qu'on a découvre les problèmes, comportement homogène dans le temps
+.left[![Sortie de piste](pictures/sortieDePiste.png)]
 
-    * Maintenance et maJ : montée de version  de IDE / JDK / etc.
-    * Coût : comment le mesurer pour l'anticiper voire le diminuer 
+* coût de maintenance
+
+* "Nivellement par le bas"
+
+## Objectif : 
+Devbox *très* rapide à déployer et du premier coup
+
 ]
 
 ---
@@ -400,7 +395,6 @@ layout: false
 ]
 * "Compagnonnage" 
 * Eat your own dog food
-
 
  
 ]
