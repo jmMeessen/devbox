@@ -171,9 +171,9 @@ layout: false
 * Enseignant la HA et les SIGs (ENSG, EPSI)
 
 * Contact :
-  * [Gmail](damien.duportal@gmail.com)
-  * [Twitter](@DamienDuportal)
-  * [Github](https://github.com/dduportal)
+  * Gmail : `damien.duportal@gmail.com`
+  * Twitter : [@DamienDuportal](https://twitter.com/DamienDuportal)
+  * Github : [dduportal](https://github.com/dduportal)
 
 
 ]
@@ -328,7 +328,7 @@ layout: false
 
 .center[![Toolbox](pictures/toolbox.png)]
 
-* Même problèmes, donc mêmes solutions ...
+* Même problèmes que pour nos applications, donc mêmes solutions :
   * DaaT : Devbox as a Tool (comme avant)
   * DaaS : Devbox as a Software
   * DaaI : Devbox as an Infrastructure
@@ -661,7 +661,7 @@ layout: false
 # Réseau 
 
   * Travailleurs nomades, pauvres employé de SSI...
-  * Ressources locales : cache proxy, registre docker, cache Maven) ?
+  * Ressources locales : cache proxy, registre docker, cache Maven ?
  
 ]
 
@@ -675,9 +675,18 @@ layout: false
 .right-column[
   # Devbox as an infrastructure
 
-  Solution : Docker-compose ! 
+  Solution : Docker-compose (Was known as Fig) ! 
 
-FIXME : docker.yml
+```yaml
+web:
+  image: my-java-app:1.0.0
+  links:
+   - db
+  ports:
+   - "8000:8000"
+db:
+  image: postgres
+```
  
 ]
 
@@ -709,18 +718,19 @@ layout: false
 .right-column[
   # Qu'à t'on appris ?
 
- * j'ai appris de nouvelles technos (amélioré ma pratique)
-  * Docker
-  * Test Driven SYSTEM development (DEVOPS) 
-  * Bash and Linux skills
-  * the Gitlab/Github way
-  * confirmation que de la conception à la production, le flux est continu (mort aux silos)
-  * apprentissage du travail communautaire/ OSS (des valeurs qui me sont très proches) aussi à distance.
+  * Jean-Marc :
+    * Nouvelles méthodes & technos
 
-* Notre intuition est correcte:
-  * Encore rien rencontré de bloquant et très, très prometteur.
-  * Il y a encore du travail
-  * j'attend avec impatience l'épreuve du feu (situation réelle)
+    * Confirmation que de la conception à la production, le flux est continu (mort aux silos !)
+    
+    * Apprentissage du travail communautaire/ OSS (des valeurs qui me sont très proches) aussi à distance.
+
+  * Damien :
+    * Peer-working : programmer, revue, presentation !
+
+    * "Faire faire" : 3ème étape du formateur
+
+    * Confiance en NOUS
 
 ]
 
@@ -741,10 +751,13 @@ layout: false
 * Performances 
 * CLI : parfait
 * Excellent indicateur de la culture de vos devs.
+* Notre intuition est correcte:
+    * Encore rien rencontré de bloquant et très, très prometteur.
+    * Il y a encore du travail
+    * j'attend avec impatience l'épreuve du feu (situation réelle)
 
 # Améliorations
 * Processus de release rigoureux avec le DockerHub
-* Plus d'automatisation (x2go commande line)
 * README à améliorer (contributions ? )
 ]
 
