@@ -16,7 +16,10 @@
 
 * [x] Attention, les ENV du Dockerfile ne sont pas appliqués au user dockerx => /etc/default, profile, etc...
 
-* [ ] Test docker inside devbox
+* [ ] Delete ISSUES.md (Use github Issues instead)
+
+* [ ] Use docker inside the VM (Docker host with IP ?)
+
 * [ ] Faire une démo d'un dévelopement (spring boot)
 	* [x] depot Github séparé
 	* [x] configurer maven
@@ -38,3 +41,4 @@
 ## Nice to have
 
 * [ ] Further improve the README.md. Add links to sub-files like ISSUES or background information on the why of the initative.
+* Make goal testing
