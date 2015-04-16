@@ -22,6 +22,15 @@ start:
 shell:
 	docker exec --tty --interactive $(DOCKER_NAME) sudo -u dockerx bash -l
 
+gui:
+	/Applications/x2goclient.app/Contents/MacOS/x2goclient \
+		--ssh-port 2200 \
+		--ssh-key ~/.vagrant.d/insecure_private_key \
+		--link lan \
+		--clipboard=both \
+		--close-disconnect \
+		--command=LXDE
+
 presentation:
 	docker kill $(DOCKER_NAME)-web || :
 	docker rm $(DOCKER_NAME)-web || :
