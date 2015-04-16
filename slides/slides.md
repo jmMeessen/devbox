@@ -441,13 +441,27 @@ layout: false
 .right-column[
   # TDD/BDD
 
-  Utilisation de [bats](https://github.com/sstephenson/bats) au maximum
-  * BDD oriented :
-FIXME : code example d'un test
-  * Bash based : compromis "bootstrap rapide" vs. maintenabilité
-  * Objectif pour une PR : test, puis impl à chaque fois !
-  * Pragamtisme : ne pas tout tester non plus, par petits pas !
- 
+  Utilisation de [Bats](https://github.com/sstephenson/bats) (testing en bash) au maximum
+
+```shell
+@test "Check JDK presence" {
+  docker run --user "dockerx" which java
+}
+```
+
+  * Test Driven Developemt (BDD) oriented
+  * Basé sur Bash : compromis "démarrage rapide" vs. maintenabilité
+  * Objectif pour une fonctionnalité : 
+    * Rouge : Rédaction des tests qui vont être "fail" 
+    * Green : Implémentation, c'est OK 
+  * Pragmatisme : ne pas tout tester non plus, par petits pas !
+
+
+Lancement facile :
+```bash
+$ make test
+```
+
 ]
 
 ---
@@ -460,10 +474,24 @@ layout: false
   # Continuous*
 
   Utilisation de [CircleCI](https://circleci.com) :
-  * Github-hook based (push == build)
+
+  * Basé sur les hooks Github (git push == build)
   * Support de Docker
-  * Configuration as a code
-FIXME : extrai de circle.yml
+  * Configuration as a code :
+
+```yaml
+circle.yml:
+
+machine:
+    services:
+    - docker
+dependencies:
+  override:
+    - make build
+test:
+  override:
+    - make test
+```
  
 ]
 
@@ -477,7 +505,7 @@ layout: false
   # Docker stack
 
   Utilisation de [boot2docker](https://boot2docker.io) :
-  * Mutli-plateforme (virtualbox)
+  * Multi-plateforme (virtualbox)
   * Support officiel de Docker
  
 ]
@@ -494,6 +522,23 @@ layout: false
   Utilisation de [GNU Make](https://www.gnu.org/software/make/) :
   * Indépendance cinémtique / outils (passage à packer ou rocket ?)
   * Multi-platforme
+
+```bash
+Makefile:
+
+all: build test
+
+build:
+  ...
+start:
+  ...
+test:
+  ...
+backup:
+  ...
+clean:
+  ...
+```
  
 ]
 
