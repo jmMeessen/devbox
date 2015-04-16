@@ -81,6 +81,9 @@ COPY configs/firefox.desktop /usr/share/applications/firefox.desktop
 #install GIT
 RUN apt-get install -y --no-install-recommends git
 
+#install demo material
+COPY demoMaterial/setupDemo.sh /data/setupDemo.sh
+
 RUN chown -R dockerx:dockerx /data \
   && chmod -R 0750 /data
 

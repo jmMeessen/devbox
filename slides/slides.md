@@ -192,7 +192,7 @@ layout: false
 
   * Toujours aussi enthousiaste pour apprendre et partager
   
-  * MAIS, une de mes grandes frustration : La perte de temps et d'énergie au démarrage de chaque nouvelle aventure.
+  * MAIS, une de mes grandes frustrations : La perte de temps et d'énergie au démarrage de chaque nouvelle aventure.
 ]
 ???
 "30 dernieres années" : 
@@ -266,7 +266,7 @@ layout: false
 ]
 .right-column[
   # Constat
-  * DEVBOX = TOOLBOX = Trousse à outils (=> trousse à outils + camion atelier)
+  * DEVBOX = TOOLBOX = Trousse à outils = Camion atelier
 
   .left[![Toolbox](pictures/toolbox.png)]
   * même problèmes, donc mêmes solutions ...
@@ -319,6 +319,9 @@ layout: false
   Utilisez des SCMs, préférerrez des décentralisés qui ouvre la voie à de nouvelles façons de travailler :
 
   FIXME : Image du graph Github pour *Github wokflow*
+  OK ?
+
+  .center[![GitWorkflow](pictures/gitflow.jpg)]
 ]
 
 ---
@@ -332,7 +335,7 @@ layout: false
 .right-column[
   # "Nouvelles" pratiques
 
-  N'ayons pas peur d'_essayer_, *plusieurs fois* toutes ces nouvelles façons de faire, sans être dogmatiques
+  N'ayons pas peur d'_essayer,_ **plusieurs fois,** toutes ces nouvelles façons de faire, sans être dogmatiques
 
   * Agile
   * TDD/BDD/Doc. as code
