@@ -125,6 +125,7 @@ layout: false
 ]
 ???
 Jmm
+
 ---
 layout: false
 .left-column[
@@ -222,10 +223,14 @@ layout: false
 
 ???
 (jmm)
+
 ---
 template: inverse
 
 # Pourquoi ce talk ?
+
+???
+jmm
 
 ---
 layout: false
@@ -283,9 +288,7 @@ Devbox *très* rapide à déployer et du premier coup
   jmm
 
   * perte du focus
-
   * et je ne parle pas de l'env d'integration
-
   * Maintenance et maJ : montée de version  de IDE / JDK / etc.
   * Coût : comment le mesurer pour l'anticiper voire le diminuer 
 
