@@ -88,3 +88,7 @@ teardown() {
 @test "Check GIT presence" {
 	run_as_user_cmd_in_devbox "dockerx" which git
 }
+
+@test "We activate the AuthorizedKeysFile in the SSH daemon" { 
+	[ $(run_as_user_cmd_in_devbox "dockerx" grep '#AuthorizedKeysFile' /etc/ssh/sshd_config | wc -l ) -eq 0 ]
+}
