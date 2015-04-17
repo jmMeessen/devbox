@@ -577,12 +577,14 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  # Docker stack
+# Docker stack
 
-  Utilisation de [boot2docker](https://boot2docker.io) :
-  * Multi-plateforme (virtualbox)
-  * Support officiel de Docker
- 
+Utilisation de [boot2docker](https://boot2docker.io) :
+* Multi-plateforme (virtualbox)
+* Support officiel de Docker
+
+.center[![Boot2docker](pictures/b2d.jpg)]
+
 ]
 ???
 jmm
