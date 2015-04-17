@@ -362,7 +362,8 @@ layout: false
 
 ]
 ???
-(jmm)
+ddu
+
 ---
 
 template: inverse
@@ -468,17 +469,20 @@ layout: false
 # Démo Time !
 ]
 .right-column[
-  # Démo Time !
+# Démo Time !
 
-  * Contexte : spring boot "hello world" application
-  * Java DK, Maven, IntelliJ Idea, Docker, Compose
-  * https://github.com/jmMeessen/devbox
-  * Use cases :
-    * Onboarding
-    * Developement simple basé sur Spring Boot
-    * MaJ IDEA sans casser le dev workflow
-    * Portabilité
-    * ? Legacy (reprendre de vieilles applications)
+* Objet : Spring boot "hello world" application
+
+* Java DK, Maven, IntelliJ Idea, Docker, Compose
+
+* Open and reusable code : [https://github.com/jmMeessen/devbox](https://github.com/jmMeessen/devbox)
+
+* Use cases :
+  * Onboarding
+  * Developement simple basé sur Spring Boot
+  * MaJ IDEA sans casser le dev workflow
+  * Portabilité
+  * Legacy (Lon living applications)
 ]
 ???
 jmm
@@ -493,10 +497,13 @@ layout: false
   # SCM :Git (on Github)
 
   * Public
+
   * Partagé
+
   * Pull-Request systématique (Github workflow)
 
-.center[![GitWorkflow](pictures/gitflow.jpg)]
+.center[![Github](pictures/github-logo.jpg)]
+.center[![GitWorkflow](pictures/git-pr.png)]
 
  
 ]
