@@ -628,9 +628,9 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  # Demo 1 : 
+# Demo 1 : 
 
-  FIXME : schema global
+.center[![Demo1](pictures/demo1.png)]
  
 ]
 ???
@@ -698,9 +698,9 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  # Demo 2 : 
+# Demo 2 : 
 
-  FIXME : schema global
+.center[![Demo2](pictures/demo2.png)]
  
 ]
 
