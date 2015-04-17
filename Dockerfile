@@ -95,10 +95,15 @@ RUN mkdir -p /home/dockerx/.ssh \
 
 RUN sed -i "s/#AuthorizedKeysFile/AuthorizedKeysFile/g" /etc/ssh/sshd_config
 
+COPY configs/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod a+x /usr/local/bin/entrypoint.sh
+
+
 # Mark as data volumes those folder
 VOLUME ["/data","/var/log","/tmp","/var/cache"]
 
 EXPOSE 22
 
+USER dockerx
 
-CMD ["/usr/sbin/sshd","-D"]
+CMD ["/usr/local/bin/entrypoint.sh"]
