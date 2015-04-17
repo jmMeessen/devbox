@@ -24,7 +24,7 @@ teardown() {
 }
 
 @test "Check MVN presence" {
-	run_cmd_in_devbox /opt/maven/maven-latest/bin/mvn -version
+	run_cmd_in_devbox which mvn
 }
 
 @test "Default user is dockerx" { 
@@ -88,8 +88,4 @@ teardown() {
 
 @test "Check GIT presence" {
 	run_cmd_in_devbox which git
-}
-
-@test "We activate the AuthorizedKeysFile in the SSH daemon" { 
-	[ $(run_cmd_in_devbox grep '#AuthorizedKeysFile' /etc/ssh/sshd_config | wc -l ) -eq 0 ]
 }

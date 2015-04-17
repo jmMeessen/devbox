@@ -95,6 +95,8 @@ RUN mkdir -p /home/dockerx/.ssh \
 
 RUN sed -i "s/#AuthorizedKeysFile/AuthorizedKeysFile/g" /etc/ssh/sshd_config
 
+RUN ln -s /opt/maven/maven-latest/bin/mvn /usr/local/bin/
+
 COPY configs/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod a+x /usr/local/bin/entrypoint.sh
 

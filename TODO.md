@@ -25,9 +25,9 @@
 	* [x] configurer maven
 	* [x] faire fonctionner le build maven depuis la ligne de commande
 	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
-
+ 
 * [x] remove docker-bats directory
-* [ ] Lighten the final image
+* [x] mvn in concrete path (sym link)
 
 ## Slide related TODO
 
@@ -43,3 +43,5 @@
 * [ ] Further improve the README.md. Add links to sub-files like ISSUES or background information on the why of the initative.
 * [ ] Make goal testing
 * [ ] Change background
+* [ ] Lighten the final image
+
