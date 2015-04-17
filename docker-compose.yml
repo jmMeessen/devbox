@@ -9,7 +9,7 @@ data:
   net: "none"
 proxy:
   image: clue/polipo
-  command: diskCacheRoot=/proxy-cache logFile=/var/log/polipo.log
+  command: proxyAddress=0.0.0.0 proxyPort=8123 diskCacheRoot=/proxy-cache logFile=/var/log/polipo.log
   expose:
     - "8123"
   volumes_from:
