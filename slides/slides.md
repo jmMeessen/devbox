@@ -478,7 +478,7 @@ layout: false
     * Developement simple basé sur Spring Boot
     * MaJ IDEA sans casser le dev workflow
     * Portabilité
-    * ? Legacy (reprendre old applications)
+    * ? Legacy (reprendre de vieilles applications)
 ]
 ???
 jmm
@@ -713,10 +713,10 @@ template: inverse
 layout: false
 .left-column[
 # Conclusion
-  ## Qu'à t'on appris ?
+  ## Qu'a t'on appris ?
 ]
 .right-column[
-  # Qu'à t'on appris ?
+  # Qu'a t'on appris ?
 
   * Jean-Marc :
     * Nouvelles méthodes & technos
