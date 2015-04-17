@@ -27,7 +27,7 @@ start:
 shell: start
 	docker exec --tty --interactive $(DOCKER_NAME) bash -l
 
-gui:
+gui: start
 	/Applications/x2goclient.app/Contents/MacOS/x2goclient \
 		--session=devbox
 
