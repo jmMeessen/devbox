@@ -27,7 +27,7 @@
 	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
  
 * [x] remove docker-bats directory
-* [ ] mvn in concrete path (sym link)
+* [x] mvn in concrete path (sym link)
 
 ## Slide related TODO
 
