@@ -766,3 +766,18 @@ template: inverse
 
 # The end
 ## Thanks ! Questions ?
+
+---
+# picture credits
+
+* chokotoff2.jpg - http://www.bonbonsgourmands.fr/Bonbons-envelopp%C3%A9s-34-1.html
+* belgianBeers.jpg - http://www.lessentiel.lu/fr/lifestyle/tendances/story/23830677
+* defile20106.jpg - http://www.noblesseetroyautes.com/2010/07/la-famille-royale-belge-au-defile-militaire-de-la-fete-nationale/
+* bruxelles_brussels.jpg - https://chaudoir.wordpress.com/2009/11/25/tout-est-dit-dans-un-seul-panneau/
+* sortieDePiste.png - http://www.pixauto.net/2011/tour-auto/circuit-du-vigeant.php/ and http://motorsport.nextgen-auto.com/12-tours-pour-Grosjean-et-une-sortie-de-piste-Maldonado-bloque-au-stand,73785.html
+* toolbox.png - http://www.autostock04.fr/ and http://buildingabrandonline.com/BrianElrod/promote-products-with-an-affiliate-toolbox/
+* eliminates-matrix-from-hell.png - http://dduportal.github.io/presentations/docker-meetup-lyon-20140528/
+* continuousintegrationcycle.png - http://blog.anthonybaker.me/2012/05/about-continuous-integration.html
+* vitr.jpg - ?
+* gitflow.jpg - https://www.atlassian.com/pt/git/workflows#!workflow-gitflow
+
