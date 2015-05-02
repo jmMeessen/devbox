@@ -20,11 +20,11 @@
 
 * [x] Use docker inside the VM (Docker host with IP ?)
 
-* [ ] Faire une démo d'un dévelopement (spring boot)
+* [x] Faire une démo d'un dévelopement (spring boot)
 	* [x] depot Github séparé
 	* [x] configurer maven
 	* [x] faire fonctionner le build maven depuis la ligne de commande
-	* [ ] faire fonctionner/intégrer ce projet Maven dans Intellij
+	* [x] faire fonctionner/intégrer ce projet Maven dans Intellij
  
 * [x] remove docker-bats directory
 * [x] mvn in concrete path (sym link)
@@ -38,10 +38,4 @@
 * [x] Est-ce que le slide show fonctionne aussi off-line ? Maintenant Oui (remark min JS + fonts googles avec css font google)
 
 
-## Nice to have
-
-* [ ] Further improve the README.md. Add links to sub-files like ISSUES or background information on the why of the initative.
-* [ ] Make goal testing
-* [ ] Change background
-* [ ] Lighten the final image
 
