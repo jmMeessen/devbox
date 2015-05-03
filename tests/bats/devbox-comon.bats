@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 
 CONTAINER_TEST_NAME=testing_devbox
-DEVBOX_IMAGE_NAME=cpt_igloo/devbox
+DEVBOX_IMAGE_NAME=app_devbox
 
 
 run_cmd_in_devbox() {

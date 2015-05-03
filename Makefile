@@ -1,8 +1,6 @@
 .PHONY: build shell test all presentation start clean backup prepare
 
-DOCKER_IMAGE := cpt_igloo/devbox
-DOCKER_NAME = app_devbox_1
-PROXY_CACHE_DIR = /var/lib/boot2docker/proxy-cache
+WEB_SRV_NAME = app_devbox_1
 
 all: build test
 
@@ -23,9 +21,9 @@ gui: start
 		--session=devbox
 
 presentation:
-	docker kill $(DOCKER_NAME)-web || :
-	docker rm $(DOCKER_NAME)-web || :
-	@docker run -d --name $(DOCKER_NAME)-web -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
+	docker kill $(WEB_SRV_NAME) || :
+	docker rm $(WEB_SRV_NAME) || :
+	@docker run -d --name $(WEB_SRV_NAME) -v $(CURDIR)/slides:/www -p 80:80 fnichol/uhttpd
 	@echo http://$$(boot2docker ip 2>/dev/null):80
 
 test:
@@ -39,7 +37,6 @@ test:
 
 backup:
 	docker-compose -p app run devbox tar czf /tmp/bkp-data-latest.tgz /data/
-	#docker cp $(DOCKER_NAME):/tmp/bkp-data-latest.tgz ./
 
 clean:
 	docker-compose -p app kill
