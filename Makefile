@@ -6,7 +6,7 @@ PROXY_CACHE_DIR = /var/lib/boot2docker/proxy-cache
 
 all: build test
 
-build:
+build: prepare
 	docker-compose -p app build
 	mkdir -p ~/.x2goclient
 	cp -f configs/sessions ~/.x2goclient/
@@ -44,6 +44,10 @@ backup:
 clean:
 	docker-compose -p app kill
 	docker-compose -p app rm -f -v
+
+prepare:
+	which docker-compose || curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+	chmod +x /usr/local/bin/docker-compose
 
 
 
