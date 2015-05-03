@@ -1,4 +1,4 @@
-.PHONY: build shell test all presentation start clean backup
+.PHONY: build shell test all presentation start clean backup prepare
 
 DOCKER_IMAGE := cpt_igloo/devbox
 DOCKER_NAME = app_devbox_1
@@ -46,7 +46,7 @@ clean:
 	docker-compose -p app rm -f -v
 
 prepare:
-	which docker-compose || curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /home/ubuntu/bin/docker-compose && chmod +x /home/ubuntu/bin/docker-compose
+	if [ "$$CIRCLECI" = "true" ]; then curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /home/ubuntu/bin/docker-compose && chmod +x /home/ubuntu/bin/docker-compose;fi
 
 
 
