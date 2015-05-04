@@ -9,7 +9,8 @@ Building a portable docker based developer toolbox
 
 For a more detailed discussion about the motivations and the background, see [background-fr.md](background-fr.md)
 
-Note: It is assumed that you have a Docker environment installed (or alternatively Boot2Docker). A good test is whether "docker ps" shows no errors.
+<u>Note:</u> It is assumed that you have a Docker environment installed (or alternatively Boot2Docker). A good test is whether "docker ps" shows no errors. 
+You will also need `docker-compose`.
 
 ## How to use the Devbox
 
@@ -22,27 +23,23 @@ $ make start
 
 ### Use the GUI 
 
-Start the X2GO client and configure a session by taking care to setup
+To start the Graphical User Interface to the DEVBOX, just do
 
-- the host to your boot2docker host (192.168.59.103)
-- the login to the devbox main user (dockerx)
-- the port is statically assigned to localhost's 2200
-- set the session type to LXDE
-- in the "Connection" tab, choose "LAN" connection speed
-- (not mandatory because it will resize dynamically) in the "Input/output" tab, choose the display option that best suit your configuration.
+```
+make gui
+```
 
-Save the session, and start it. 
-You will be prompted for a password. 
-It is the same as the user name.
+And, tadahh, X2GO starts and you are in business, connected to the GUI of your Devbox.
 
-You will be prompted to accept the devbox public SSH key. 
-If you restarted the container, the key might have changed and the SSH client will not like it.
-Follow the instructions to accept the new public key.
+#### manual startup of the GUI
 
-(Mac OS Yosemite Only bug) If the system gives an error like "SSH daemon failed to open the application's public key", just
-accept it by clicking on "OK".
+On certain configurations, the startup with `make` fails. You can start it by hand.
 
-And, tadahh, your in business and connected to the GUI of your Devbox.
+Start X2GO. If you built the DEVBOX with "make", a session is automatically created. Just double click on it. Should there be an opened session (remains of a failed `make gui`tentative), just delete it and create a new session by clicking on "new".
+
+
+
+
 
 ### Use the command line
 
