@@ -1,0 +1,33 @@
+data:
+  image: debian:wheezy
+  command: chmod -R 777 /proxy-cache
+  volumes:
+    - /data
+    - /var/log
+    - /proxy-cache
+    - ~/work/mavenRepo/docker:/data/mavenRepo 
+  net: "none"
+proxy:
+  image: clue/polipo
+  command: proxyAddress=0.0.0.0 proxyPort=8123 diskCacheRoot=/proxy-cache logFile=/var/log/polipo.log
+  expose:
+    - "8123"
+  volumes_from:
+    - data
+devbox:
+  build: ./
+  ports:
+    - "2200:22"
+  volumes_from:
+    - data
+  links:
+    - proxy
+  volumes:
+    - /usr/local/bin/docker:/usr/local/bin/docker
+    - /home/docker/.docker:/home/dockerx/.docker
+  environment:
+  - DOCKER_HOST=tcp://10.0.2.15:2376
+  - DOCKER_TLS_VERIFY=1
+  - http_proxy=http://proxy:8123
+  - https_proxy=http://proxy:8123
+  - no_proxy=localhost,127.0.0.1,10.0.2.15

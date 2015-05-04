@@ -362,7 +362,8 @@ layout: false
 
 ]
 ???
-(jmm)
+ddu
+
 ---
 
 template: inverse
@@ -468,17 +469,20 @@ layout: false
 # Démo Time !
 ]
 .right-column[
-  # Démo Time !
+# Démo Time !
 
-  * Contexte : spring boot "hello world" application
-  * Java DK, Maven, IntelliJ Idea, Docker, Compose
-  * https://github.com/jmMeessen/devbox
-  * Use cases :
-    * Onboarding
-    * Developement simple basé sur Spring Boot
-    * MaJ IDEA sans casser le dev workflow
-    * Portabilité
-    * ? Legacy (reprendre de vieilles applications)
+* Objet : Spring boot "hello world" application
+
+* Java DK, Maven, IntelliJ Idea, Docker, Compose
+
+* Open and reusable code : [https://github.com/jmMeessen/devbox](https://github.com/jmMeessen/devbox)
+
+* Use cases :
+  * Onboarding
+  * Developement simple basé sur Spring Boot
+  * MaJ IDEA sans casser le dev workflow
+  * Portabilité
+  * Legacy (Lon living applications)
 ]
 ???
 jmm
@@ -493,10 +497,13 @@ layout: false
   # SCM :Git (on Github)
 
   * Public
+
   * Partagé
+
   * Pull-Request systématique (Github workflow)
 
-.center[![GitWorkflow](pictures/gitflow.jpg)]
+.center[![Github](pictures/github-logo.jpg)]
+.center[![GitWorkflow](pictures/git-pr.png)]
 
  
 ]
@@ -577,12 +584,14 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  # Docker stack
+# Docker stack
 
-  Utilisation de [boot2docker](https://boot2docker.io) :
-  * Multi-plateforme (virtualbox)
-  * Support officiel de Docker
- 
+Utilisation de [boot2docker](https://boot2docker.io) :
+* Multi-plateforme (virtualbox)
+* Support officiel de Docker
+
+.center[![Boot2docker](pictures/b2d.jpg)]
+
 ]
 ???
 jmm
@@ -628,9 +637,9 @@ layout: false
   ## Devbox as a code
 ]
 .right-column[
-  # Demo 1 : 
+# Demo 1 : 
 
-  FIXME : schema global
+.center[![Demo1](pictures/demo1.png)]
  
 ]
 ???
@@ -698,9 +707,9 @@ layout: false
   ## Devbox as an infrastructure
 ]
 .right-column[
-  # Demo 2 : 
+# Demo 2 : 
 
-  FIXME : schema global
+.center[![Demo2](pictures/demo2.png)]
  
 ]
 
