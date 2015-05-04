@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=IntelliJ IDEA Community
+Comment=A Java IDE
+Icon=/opt/idea/idea.png
+Exec=/opt/idea/bin/idea.sh
+Type=Application
+Terminal=false
+Categories=GNOME;GTK;Development;
