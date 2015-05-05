@@ -6,6 +6,22 @@ class: center, middle, inverse
 # Devbox in Docker
 
 ---
+
+# Access this presentation :
+
+## Online version (HTML) :
+
+[http://dduportal.github.io/presentations/mixit-2015-devbox-docker](http://dduportal.github.io/presentations/mixit-2015-devbox-docker)
+
+Proudly powered by [RemarkJS](https://github.com/gnab/remark)
+
+## Offline version (PDF) :
+
+[http://dduportal.github.io/presentations/mixit-2015-devbox-docker/mixit-2015-devbox-docker.pdf](http://dduportal.github.io/presentations/mixit-2015-devbox-docker/mixit-2015-devbox-docker.pdf)
+
+Proudly exported with [Deck2PDF](https://github.com/melix/deck2pdf)
+
+---
 layout:false
 
 # Agenda :
