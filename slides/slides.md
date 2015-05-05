@@ -6,6 +6,22 @@ class: center, middle, inverse
 # Devbox in Docker
 
 ---
+
+# Access this presentation :
+
+## Online version (HTML) :
+
+[http://dduportal.github.io/presentations/mixit-2015-devbox-docker](http://dduportal.github.io/presentations/mixit-2015-devbox-docker)
+
+Proudly powered by [RemarkJS](https://github.com/gnab/remark)
+
+## Offline version (PDF) :
+
+[http://dduportal.github.io/presentations/mixit-2015-devbox-docker/mixit-2015-devbox-docker.pdf](http://dduportal.github.io/presentations/mixit-2015-devbox-docker/mixit-2015-devbox-docker.pdf)
+
+Proudly exported with [Deck2PDF](https://github.com/melix/deck2pdf)
+
+---
 layout:false
 
 # Agenda :
@@ -606,7 +622,7 @@ layout: false
   # Cinématique
 
   Utilisation de [GNU Make](https://www.gnu.org/software/make/) :
-  * Indépendance cinémtique / outils (passage à packer ou rocket ?)
+  * Indépendance cinématique / outils (On peut s'affranchir de Docker)
   * Multi-platforme
 
 ```bash
@@ -649,6 +665,10 @@ jmm
 template: inverse
 
 # Demo 1
+
+See code on Github :
+
+[https://github.com/jmMeessen/devbox/tree/Demo1](https://github.com/jmMeessen/devbox/tree/Demo1)
 
 ???
 jmm
@@ -718,6 +738,10 @@ template: inverse
 
 # Demo 2
 
+See code on Github :
+
+[https://github.com/jmMeessen/devbox/tree/Demo2](https://github.com/jmMeessen/devbox/tree/Demo2)
+
 ---
 layout: false
 .left-column[
@@ -777,7 +801,7 @@ template: inverse
 ## Thanks ! Questions ?
 
 ---
-# picture credits
+# Crédits images
 
 * chokotoff2.jpg - http://www.bonbonsgourmands.fr/Bonbons-envelopp%C3%A9s-34-1.html
 * belgianBeers.jpg - http://www.lessentiel.lu/fr/lifestyle/tendances/story/23830677
