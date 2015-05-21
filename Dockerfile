@@ -63,7 +63,7 @@ RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
   && tar xzf /tmp/maven.tgz -C /opt/maven \
   && ln -s "/opt/maven/apache-maven-${MAVEN_VERSION}" /opt/maven/maven-latest \
   && ln -s /opt/maven/maven-latest/bin/mvn /usr/local/bin/ \
-  && curl -L -o /tmp/firefox.tar.bz2 http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-x86_64/en-US/firefox-${FIREFOX_VERSION}.tar.bz2 \
+  && curl -L -o /tmp/firefox.tar.bz2 http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/${FIREFOX_VERSION}/linux-x86_64/en-US/firefox-${FIREFOX_VERSION}.tar.bz2 \
   && tar jxf /tmp/firefox.tar.bz2 -C /opt/ \
   && ln -s /opt/firefox/firefox /usr/local/bin/ \
   && echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6NF8iallvQVp22WDkTkyrtvp9eWW6A8YVr+kz4TjGYe7gHzIw+niNltGEFHzD8+v1I2YJ6oXevct1YeS0o9HZyN1Q9qgCgzUFtdOKLv6IedplqoPkcmF0aYet2PkEDo3MlTBckFXPITAMzF8dJSIFo9D8HfdOV0IAdx4O7PtixWKn5y2hMNG0zQPyUecp4pzC6kivAIhyfHilFR61RGL+GPXQ2MWZWFYbAGjyiYJnAmCP3NOTd0jMZEnDkbUvxhMmBYSdETk1rRgm+R4LOzFUGaHqHDLKLX+FIPKcF96hrucXzcWyLbIbEgE98OHlnVYCzRdK8jlqm8tehUc9c9WhQ== vagrant insecure public key" \
