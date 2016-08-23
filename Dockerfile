@@ -1,11 +1,11 @@
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER Damien DUPORTAL <damien.duportal@gmail.com>
 MAINTAINER Jean-Marc MEESSEN <jean-marc@meessen-web.org>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV IDEA_VERSION=14.1.1
-ENV MAVEN_VERSION=3.2.5
-ENV FIREFOX_VERSION=37.0.2
+ENV IDEA_VERSION=2016.1.4
+ENV MAVEN_VERSION=3.3.9
+ENV FIREFOX_VERSION=48.0.1
 
 COPY configs/x2go.list /etc/apt/sources.list.d/x2go.list
 COPY configs/idea.desktop /usr/share/applications/idea.desktop

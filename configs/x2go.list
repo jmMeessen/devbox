@@ -1,4 +1,4 @@
 # X2Go Repository (release builds)
-deb http://packages.x2go.org/debian wheezy main
+deb http://packages.x2go.org/debian jessie main
 # X2Go Repository (sources of release builds)
-deb-src http://packages.x2go.org/debian wheezy main
+deb-src http://packages.x2go.org/debian jessie main
