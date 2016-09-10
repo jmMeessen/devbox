@@ -41,8 +41,9 @@ RUN apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E \
     x2goserver \
     x2golxdebindings \
     x2goserver-xsession \
-    x2go-keyring \
-  && apt-get remove -q -y iceweasel \
+    x2go-keyring
+
+ RUN  apt-get remove -q -y iceweasel \
   && echo "root:root" | chpasswd \
   && adduser --disabled-password --gecos "" dockerx \
   && adduser dockerx sudo \
